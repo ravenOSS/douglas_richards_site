@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Test</title>
+</head>
+<body>
+  <div class="container">
+
+  <div class='navbar'>
+    <div class='logo'>
+      <h2>Douglas Richards</h2>
+    </div>
+    <link href='/'>
+      <a>About</a>
+    </link>
+    <link href='/blogsListing'>
+      <a>Blogs</a>
+    </link>
+    <link href='/profile'>
+      <a>Author Profile</a>
+    </link>
+  </div>
+  
+  <div id='main'>
+    <div id="overview">
+      Overview
+    </div>
+    <div id="blog-content">
+      
+    <blog class='blog-post'>blog 1</blog>
+    <blog class='blog-post'>blog 2</blog>
+    <blog class='blog-post'>blog 3</blog>
+    <blog class='blog-post'>blog 4</blog>
+    <blog class='blog-post'>blog 5</blog>
+    <blog class='blog-post'>blog 6</blog>
+    <blog class='blog-post'>blog 7</blog>
+    <blog class='blog-post'>blog 8</blog>
+    <blog class='blog-post'>blog 9</blog>
+    <blog class='blog-post'>blog 10</blog>
+    <blog class='blog-post'>blog 11</blog>
+    <blog class='blog-post'>blog 12</blog>
+    <blog class='blog-post'>blog 13</blog>
+    <blog class='blog-post'>blog 14</blog>
+    <blog class='blog-post'>blog 15</blog>
+    <blog class='blog-post'>blog 16</blog>
+    <blog class='blog-post'>blog 17</blog>
+    <blog class='blog-post'>blog 18</blog>
+    <blog class='blog-post'>blog 19</blog>
+    <blog class='blog-post'>blog 20</blog>
+    <blog class='blog-post'>blog 21</blog>
+    <blog class='blog-post'>blog 22</blog>
+    <blog class='blog-post'>blog 23</blog>
+    <blog class='blog-post'>blog 24</blog>
+    <blog class='blog-post'>blog 25</blog>
+    <blog class='blog-post'>blog 26</blog>
+    <blog class='blog-post'>blog 27</blog>
+    <blog class='blog-post'>blog 28</blog>
+  </div>
+  </div>
+  <footer class=footer>
+    Built with
+    <img
+      src='./public/nextjs-black-logo.svg'
+      alt='Next Logo'
+      className={styles.logo}
+    />
+  </footer>
+  </div>
+</body>
+</html>
+
+<style>
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: minmax(20px, 10%) 1fr minmax(80px, 30%);; 
+    /* grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) ); */
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+    "nav nav nav"
+    "sidebar_left main sidebar_right"
+    "footer footer footer";
+    /* grid-gap: 10px; */
+    background-color: #2196F3;
+    /* padding: 10px; */
+  }
+
+  .navbar {
+    grid-area: nav;
+    background-color: #5df321;
+    /* padding: 10px; */
+    margin: 0px;
+    position: fixed;
+	  top: 0;
+	  width: 100%;
+    height: 50px;
+	  display: flex;
+	  justify-content: flex-end;
+	  align-items: center;
+	  border-bottom: 5px solid #ff8c00;
+  }
+
+  .navbar a {
+    margin-right: 20px;
+  }
+
+  .logo {
+	  margin-right: auto;
+    padding-left: 20px;
+  }
+
+  #main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr ); 
+    grid-template-rows: minmax(70px, 1fr); 
+    grid-template-areas: 
+    "overview overview"
+    "blog-content blog-content";
+    gap: 10px;
+    margin: 0;
+    padding: 5px;
+    color: red;
+    background-color: green;
+    /* grid-template-columns: repeat( auto-fill, minmax(50px, 100px) ); */
+  }
+
+#overview {
+  grid-area: overview;
+  background-color: #ff8c00;
+  padding: 10px;
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #blog-content {
+    grid-area: blog-content;
+    background-color: #ff8c00;
+    padding: 10px;
+    margin: 0;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .blog-post {
+    /* width: 50px; */
+    background-color: rgba(105, 83, 83, 0.8);
+    /* padding: 10px; */
+    /* margin: 30px; */
+    /* font-size: 30px; */
+    text-align: center;
+    padding: 15px;
+  }
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(141, 41, 41);
+  /* padding: 2px; */
+  margin: 0;
+  /* position: fixed; This will position footer at the 
+  bottom of the window and scroll content: ;*/
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid #ff8c00;
+  }
+
+  .footer img {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+</style>

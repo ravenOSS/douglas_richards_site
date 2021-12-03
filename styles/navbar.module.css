@@ -1,0 +1,38 @@
+.nav {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	/* height: 25%; */
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: #5df321;
+	padding-left: 20px;
+	/* padding-right: 20px; */
+	border-bottom: 5px solid #ff8c00;
+}
+
+.logo {
+	margin-right: auto;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.nav a {
+	margin-right: 35px;
+	color: inherit;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.nav li {
+	list-style-type: none;
+	color: rgb(238, 238, 238);
+}
+
+.nav a:hover {
+	text-decoration: underline;
+}
