@@ -1,0 +1,89 @@
+backend:
+  # name: git-gateway
+  name: test-repo
+  branch: main # Branch to update (optional; defaults to master)
+
+publish_mode: editorial_workflow
+
+#media_library:
+#  name: cloudinary
+#  config:
+#    cloud_name: raveniot
+#    api_key: 187738524789985
+
+media_folder: 'public/media/uploads'
+
+public_folder: 'public/images'
+
+collections:
+  - name: 'posts'
+    label: 'Post'
+    folder: 'content'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { slug: 'Slug', name: 'slug', widget: 'string' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          # date_format: 'MM DD YYYY',
+          format: 'LL',
+        }
+      - {
+          label: CreatedAt,
+          name: 'createdAt',
+          widget: 'datetime',
+          format: 'LLL',
+          required: false,
+        }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'Hero Image', name: 'heroImage', widget: 'image' }
+      - {
+          label: 'Example Image',
+          name: 'exampleImage',
+          widget: 'image',
+          required: false,
+        }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'config'
+    label: 'Config'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Config'
+        file: 'config.json'
+        description: 'General site settings'
+        fields:
+          - label: 'URL'
+            name: 'base_url'
+            widget: 'string'
+            hint: 'Do not enter the trailing slash of the URL'
+          - label: 'Site title'
+            name: 'site_title'
+            widget: 'string'
+          - label: 'Site description'
+            name: 'site_description'
+            widget: 'string'
+          - label: 'GitHub account'
+            name: 'github_account'
+            widget: 'string'
+          - label: 'Facebook account'
+            name: 'Facebook_account'
+            widget: 'string'
+          - label: 'Twitter account'
+            name: 'twitter_account'
+            widget: 'string'
+          - label: 'Site keywords'
+            name: 'site_keywords'
+            widget: 'list'
+            summary: '{{fields.keyword.keyword}}'
+            field:
+              label: Keyword
+              name: keyword
+              widget: 'string'
