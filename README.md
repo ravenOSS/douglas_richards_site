@@ -34,3 +34,31 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 TODO: Describe setup for Cloudinary image hosting.
+
+** Configure next.config.js **
+
+```
+images: {
+loader: 'cloudinary',
+path: 'https://res.cloudinary.com/raveniot',
+domains: ['res.cloudinary.com'],
+},
+```
+
+** Cloudinary file name **
+
+'drumroll_wy6xwb.jpg'
+
+** Usage in Image component **
+
+```
+	<Image
+		src='drumroll_wy6xwb.jpg'
+		width={150}
+		height={150}
+		alt='Round Building'
+	/>
+```
+
+** Resulting URL: **
+https://res.cloudinary.com/raveniot/f_auto,c_limit,w_384,q_auto/drumroll_wy6xwb.jpg

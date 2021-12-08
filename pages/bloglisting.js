@@ -23,7 +23,7 @@ export default function BlogsListing({ allPostsData }) {
 								<li key={id}>
 									<div className={styles.card}>
 										<Image
-											src='https://res.cloudinary.com/raveniot/f_auto,c_limit,w_384,q_auto/https://res.cloudinary.com/raveniot/image/upload/v1620350764/Tech-Images/FutureTech01_ryl0wf.jpg'
+											src='drumroll_wy6xwb.jpg'
 											width={150}
 											height={150}
 											alt='Oil pump jack'
