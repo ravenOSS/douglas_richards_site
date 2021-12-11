@@ -1,7 +1,7 @@
 ---
 title: Curves!
 slug: curves
-date: February 17, 2020
+date: December 7, 2020
 createdAt: December 6, 2020 3:46 PM
 author: Douglas Richards
 excerpt: Fisheye?
