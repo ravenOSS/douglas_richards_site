@@ -1,18 +1,18 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image'
-// import nextjsBlackLogo from '/nextjsBlackLogo.svg'
+import nextjsBlackLogo from '../public/nextjsBlackLogo.svg'
 
 export default function Footer() {
 	return (
 		<footer className={styles.footer}>
-			<p>Built with</p>
+			<p>Built with </p>
+			{/* <p className={styles.logo}> */}
 			<Image
-				// className={styles.logo}
-				// src='http://localhost:3000/nextjsBlackLogo.svg'
-				src='drumroll_wy6xwb.jpg'
-				alt='Next Logo'
-				height={30}
-				width={60}
+				className={styles.logo}
+				src={nextjsBlackLogo}
+				alt='Next.js'
+				width={80}
+				height={80}
 			/>
 		</footer>
 	)
