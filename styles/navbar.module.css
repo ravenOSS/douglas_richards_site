@@ -1,11 +1,11 @@
 .nav {
 	margin: 0px auto 20px;
-	padding: 10px 0;
+	padding: 5px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	background-color: #5df321;
-	border-bottom: 5px solid #ff8c00;
+	background-color: rgb(165, 165, 165);
+	border-bottom: 3px solid #ff8c00;
 }
 
 .logo {
@@ -15,8 +15,8 @@
 }
 
 .nav a {
-	margin-left: 12px;
-	margin-right: 35px;
+	/* margin-left: 12px; */
+	margin-right: 55px;
 	font-family: 'IBM Plex Sans';
 	text-decoration: none;
 }

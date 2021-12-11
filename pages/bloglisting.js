@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/BlogListing.module.css'
 import { getSortedPostsData } from '../lib/getSortedPosts' // note import syntax
 
@@ -19,22 +20,25 @@ export default function BlogsListing({ allPostsData }) {
 				<div className={styles.grid}>
 					<ul>
 						{allPostsData.map(
-							({ id, date, title, thumbnail, heroImage, excerpt }) => (
+							({ id, date, title, thumbnail, heroImage, excerpt, body }) => (
 								<li key={id}>
-									<div className={styles.card}>
-										<Image
-											src='drumroll_wy6xwb.jpg'
-											width={150}
-											height={150}
-											alt='Oil pump jack'
-										/>
+									<Link href={`/posts/${id}`}>
+										<div className={styles.card}>
+											<Image
+												src={heroImage}
+												width={150}
+												height={150}
+												alt='Round Building'
+											/>
 
-										<div className={styles.cardText}>
-											<h5>{date}</h5>
-											<h3>{title}</h3>
-											<h4>{excerpt}</h4>
+											<div className={styles.cardText}>
+												<h2>{title}</h2>
+												<h3>{excerpt}</h3>
+												<h4>{date}</h4>
+												<div>{body}</div>
+											</div>
 										</div>
-									</div>
+									</Link>
 								</li>
 							)
 						)}
