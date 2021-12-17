@@ -33,6 +33,8 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+Using gray-matter to parse frontmatter and markdown, react-markdown for converting it to HTML and displaying it.
+
 TODO: Describe setup for Cloudinary image hosting.
 
 ** Configure next.config.js **
@@ -104,3 +106,9 @@ Remote images require a full URL, not just a path.
 Per the docs, a loader and path are required in nextjs.config.js. However, this results in local image urls being prepended with Cloudinary's CDN.
 
 Can Image be overridden for local images directory? Seems not.
+
+
+** Markdown parsing
+- react-syntax-highlighter
+- gray matter
+- react-markdown
