@@ -20,6 +20,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	margin: 15px 0;
+}
+
 .not-found {
 	text-align: center;
 }
@@ -27,17 +31,17 @@ a {
 /*
   1. Use a more-intuitive box-sizing model. From joshwcomeau.com
 */
-*,
+/* *,
 *::before,
 *::after {
 	box-sizing: border-box;
-}
+} */
 /*
   2. Remove default margin
 */
-* {
+/* * {
 	margin: 0;
-}
+} */
 /*
   3. Allow percentage-based heights in the application
 */
@@ -50,10 +54,10 @@ a {
   4. Add accessible line-height
   5. Improve text rendering
 */
-body {
+/* body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
-}
+} */
 /*
   6. Improve media defaults
 */
@@ -77,21 +81,21 @@ select {
 /*
   8. Avoid text overflows
 */
-p,
+/* p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-	/* overflow-wrap: break-word; */
-	font-family: 'IBM Plex Sans', sans-serif;
-}
+h6 { */
+/* overflow-wrap: break-word; */
+/* font-family: 'IBM Plex Sans', sans-serif; */
+/* } */
 
 /*
   9. Create a root stacking context
 */
-#root,
+/* #root,
 #__next {
 	isolation: isolate;
-}
+} */
