@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/BlogListing.module.css'
+import styles from '../styles/blogListing.module.css'
 import { getPosts } from '../lib/getPosts'
 
 export async function getStaticProps() {
@@ -43,7 +43,7 @@ export default function BlogsListing({ allPostsData }) {
 											<div className={styles.cardText}>
 												<h2>{title}</h2>
 												<h3>{excerpt}</h3>
-												<h4>{date}</h4>
+												<h6>{date}</h6>
 												<div>{body}</div>
 											</div>
 										</div>
