@@ -1,4 +1,5 @@
 .content {
+	max-width: 960px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

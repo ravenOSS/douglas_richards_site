@@ -107,8 +107,11 @@ Per the docs, a loader and path are required in nextjs.config.js. However, this 
 
 Can Image be overridden for local images directory? Seems not.
 
+\*\* Markdown parsing
 
-** Markdown parsing
 - react-syntax-highlighter
 - gray matter
 - react-markdown
+
+\*\* Using syntax highlighting with component
+https://thetombomb.com/posts/adding-code-snippets-to-static-markdown-in-Next%20js
