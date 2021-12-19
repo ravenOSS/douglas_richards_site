@@ -15,44 +15,44 @@ export async function getStaticProps() {
 export default function BlogsListing({ allPostsData }) {
 	return (
 		<div className={styles.container}>
-			<div className={styles.main}>
-				<h1>Blog Posts</h1>
-				<div className={styles.grid}>
-					<ul>
-						{allPostsData.map(
-							({
-								id,
-								date,
-								title,
-								thumbnail,
-								thumbAlt,
-								heroImage,
-								excerpt,
-								body,
-							}) => (
-								<li key={id}>
-									<Link href={`/posts/${id}`} passHref>
-										<div className={styles.card}>
-											<Image
-												src={heroImage}
-												width={150}
-												height={150}
-												alt='Round Building'
-											/>
+			{/* <div className={styles.main}> */}
+			<h1>Blog Posts</h1>
+			<div className={styles.grid}>
+				<ul>
+					{allPostsData.map(
+						({
+							id,
+							date,
+							title,
+							thumbnail,
+							thumbAlt,
+							heroImage,
+							excerpt,
+							body,
+						}) => (
+							<li key={id}>
+								<Link href={`/posts/${id}`} passHref>
+									<div className={styles.card}>
+										<Image
+											src={heroImage}
+											width={175}
+											height={175}
+											alt='Round Building'
+										/>
 
-											<div className={styles.cardText}>
-												<h2>{title}</h2>
-												<h3>{excerpt}</h3>
-												<h6>{date}</h6>
-												<div>{body}</div>
-											</div>
+										<div className={styles.cardText}>
+											<h2>{title}</h2>
+											<h3>{excerpt}</h3>
+											<h6>{date}</h6>
+											<div>{body}</div>
 										</div>
-									</Link>
-								</li>
-							)
-						)}
-					</ul>
-				</div>
+									</div>
+								</Link>
+							</li>
+						)
+					)}
+				</ul>
+				{/* </div> */}
 			</div>
 		</div>
 	)
