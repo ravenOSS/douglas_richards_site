@@ -1,13 +1,14 @@
 .footer {
 	/* display: block; */
-	height: 50px;
+	height: auto;
+	/* height: 50px; */
 	width: 100%;
 	display: flex;
 	flex-shrink: 0;
 	justify-content: center;
 	align-items: center;
 	margin-top: auto;
-	background-color: rgb(165, 165, 165);
+	background-color: rgb(179, 179, 179);
 	border-top: 1px solid red;
 }
 

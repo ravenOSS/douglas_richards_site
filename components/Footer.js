@@ -11,8 +11,8 @@ export default function Footer() {
 				className={styles.logo}
 				src={nextjsBlackLogo}
 				alt='Next.js'
-				width={80}
-				height={80}
+				// width={80}
+				// height={80}
 			/>
 		</footer>
 	)
