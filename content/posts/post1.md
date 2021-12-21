@@ -40,17 +40,20 @@ const Codeblock = {
 			<SyntaxHighlighter
 				style={vscDarkPlus}
 				language='javascript'
-				// PreTag='div'
+				PreTag='div'
 				showLineNumbers={true}
-				// wrapLines={true}
+				wrapLines={true}
 			>
-				{String(children).replace(/\n$/, '')}
+				{String(children).replace(/\n$/, '').replace(/\t/g, ' ')}
 			</SyntaxHighlighter>
 		)
 	},
 }
 
 export default Codeblock
+
+// regex replace(/\n$/, '') removes the last newline character
+// regex replace(/\t/g, ' ') replaces tabs with spaces
 ```
 
 Designed by Walter von Braun, a renowned German architect, the construction was plagued by structural reality versus design ideals.
