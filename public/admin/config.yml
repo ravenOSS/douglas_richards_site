@@ -1,6 +1,6 @@
 backend:
-  # name: git-gateway
-  name: test-repo
+  name: git-gateway
+  # local_backend: true
   branch: main # Branch to update (optional; defaults to master)
 
 publish_mode: editorial_workflow
@@ -28,7 +28,7 @@ collections:
           name: 'date',
           widget: 'datetime',
           # date_format: 'MM DD YYYY',
-          format: 'LL',
+          # format: 'LL',
         }
       - {
           label: CreatedAt,
@@ -41,7 +41,12 @@ collections:
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
       - { label: 'Thumb AltText', name: thumbAlt', widget: 'string' }
-      - { label: 'Hero Image', name: 'heroImage', widget: 'image' }
+      - {
+          label: 'Hero Image',
+          name: 'heroImage',
+          widget: 'image',
+          required: false,
+        }
       - {
           label: 'Example Image',
           name: 'exampleImage',
