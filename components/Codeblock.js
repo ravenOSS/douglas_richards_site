@@ -8,14 +8,16 @@ const Codeblock = {
 			<SyntaxHighlighter
 				style={vscDarkPlus}
 				language='javascript'
-				PreTag='div'
 				showLineNumbers={true}
-				// wrapLines={true}
+				wrapLongLines={true}
 			>
-				{String(children).replace(/\n$/, '').replace(/\t/, ' ')}
+				{String(children).replace(/\n$/, '').replace(/\t/g, '  ')}
 			</SyntaxHighlighter>
 		)
 	},
 }
 
 export default Codeblock
+
+// regex replace(/\n$/, '') removes the last newline character
+// regex replace(/\t/g, ' ') /g replaces all tabs with spaces
