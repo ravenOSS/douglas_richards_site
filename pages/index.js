@@ -1,8 +1,4 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
-import Sidebar_left from '../components/Sidebar_left'
-import Sidebar_right from '../components/Sidebar_right'
-
 import Head from 'next/head'
 import styles from '../styles/home.module.css'
 

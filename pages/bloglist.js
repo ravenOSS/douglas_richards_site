@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import styles from '../styles/bloglisting.module.css'
+import styles from '../styles/bloglist.module.css'
 import { getPosts } from '../lib/getPosts'
 
 export async function getStaticProps() {
