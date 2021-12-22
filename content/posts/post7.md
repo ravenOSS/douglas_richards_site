@@ -5,8 +5,8 @@ date: January 24, 2021
 createdAt: January 12, 2021 3:53 PM
 author: Douglas Richards
 excerpt: Worm's View
-thumbnail: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_500/v1619638137/squares_pwjy6f.jpg
-heroImage: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_1000/v1619638137/squares_pwjy6f.jpg
+thumbnail: v1619638137/squares_pwjy6f.jpg'
+heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
 ---
 

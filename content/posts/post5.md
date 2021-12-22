@@ -5,8 +5,8 @@ date: March 9, 2021
 createdAt: March 2, 2021 3:55 PM
 author: Douglas Richards
 excerpt: Spaced Living
-thumbnail: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_500/v1619638149/perches_nnayie.jpg
-heroImage: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_1000/v1619638149/perches_nnayie.jpg
+thumbnail: 'v1619638149/perches_nnayie.jpg'
+heroImage: 'v1619638149/perches_nnayie.jpg'
 exampleImage: ""
 ---
 

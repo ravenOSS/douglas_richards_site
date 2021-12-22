@@ -8,8 +8,8 @@ excerpt: Origami?
 
 # thumbnail: 'v1619638150/symmetry_afzqhu.jpg'
 # thumbnail: 'symmetry_afzqhu.jpg'
-thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638150/symmetry_afzqhu.jpg'
-heroImage: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_1000/v1619638113/collapse_c1vfyl.jpg
+thumbnail: 'v1619638150/symmetry_afzqhu.jpg'
+heroImage: 'v1619638113/collapse_c1vfyl.jpg'
 exampleImage: ''
 ---
 

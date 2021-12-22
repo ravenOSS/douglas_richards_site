@@ -5,8 +5,8 @@ date: December 21, 2020
 createdAt: December 20, 2021 3:57 PM
 author: Douglas Richards
 excerpt: Netlify Nextjs build failure - capitalize module
-thumbnail: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_500/v1619638134/drumroll_wy6xwb.jpg
-heroImage: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_1000/v1619638134/drumroll_wy6xwb.jpg
+thumbnail: 'v1619638134/drumroll_wy6xwb.jpg'
+heroImage: 'v1619638134/drumroll_wy6xwb.jpg'
 exampleImage: ''
 ---
 

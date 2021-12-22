@@ -5,8 +5,8 @@ date: December 19, 2021
 createdAt: December 17, 2021 11:15 PM
 author: Douglas Richards
 excerpt: Basic syntax highlighting component
-thumbnail: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_500/v1619638137/squares_pwjy6f.jpg
-heroImage: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_1000/v1619638137/squares_pwjy6f.jpg
+thumbnail: v1619638137/squares_pwjy6f.jpg
+heroImage: v1619638137/squares_pwjy6f.jpg
 exampleImage: ''
 ---
 

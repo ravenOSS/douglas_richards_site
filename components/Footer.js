@@ -6,14 +6,15 @@ export default function Footer() {
 	return (
 		<footer className={styles.footer}>
 			<p>Built with </p>
-			{/* <p className={styles.logo}> */}
-			<Image
-				className={styles.logo}
-				src={nextjsBlackLogo}
-				alt='Next.js'
-				// width={80}
-				// height={80}
-			/>
+			<p className={styles.logo}>
+				<Image
+					src={'nextjsBlackLogo.svg'}
+					width={20}
+					height={20}
+					alt='Next.js'
+				/>
+				<img src='/nextjsBlackLogo.svg' alt='Next.js Logo' />
+			</p>
 		</footer>
 	)
 }
