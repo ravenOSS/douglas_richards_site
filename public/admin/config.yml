@@ -40,7 +40,7 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
-      - { label: 'Thumb AltText', name: thumbAlt', widget: 'string' }
+      - { label: 'Image Alt', name: imagealt', widget: 'string' }
       - {
           label: 'Hero Image',
           name: 'heroImage',
