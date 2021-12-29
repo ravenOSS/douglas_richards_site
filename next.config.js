@@ -1,8 +1,8 @@
 module.exports = {
 	images: {
-		loader: 'cloudinary',
-		path: 'https://res.cloudinary.com/raveniot/image/upload/',
-		// domains: ['res.cloudinary.com'],
+		// loader: 'cloudinary',
+		// path: 'https://res.cloudinary.com/raveniot/image/upload/',
+		domains: ['res.cloudinary.com'],
 	},
 	webpack: (cfg) => {
 		cfg.module.rules.push({
