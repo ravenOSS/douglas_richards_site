@@ -26,29 +26,29 @@ export async function getStaticProps({ params }) {
 // gray-matter returns frontmatter as 'data' and body as 'content'
 export default function Post({ postData }) {
 	return (
-		<>
+		<article className={styles.main}>
 			<Head>
 				<title>{postData.data.title}</title>
 			</Head>
-			<article className={styles.content}>
-				<h1>{postData.data.title}</h1>
+			<h1 className={styles.heading}>{postData.data.title}</h1>
+			<div className={styles.content}>
 				<Image
 					src={postData.data.thumbnail}
 					alt={postData.data.title}
 					width='300'
 					height='300'
 				/>
-
+				<br />
 				<h3>{postData.id}</h3>
-
+				<br />
 				<h4>{postData.data.date}</h4>
-
+				<br />
 				<div>
 					<ReactMarkdown components={Codeblock} remarkPlugins={[remarkGfm]}>
 						{postData.content}
 					</ReactMarkdown>
 				</div>
-			</article>
-		</>
+			</div>
+		</article>
 	)
 }

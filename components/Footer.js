@@ -1,20 +1,22 @@
 import styles from '../styles/footer.module.css'
 import Image from 'next/image'
-import nextjsBlackLogo from '../public/nextjsBlackLogo.svg'
+import nextLogo from '../public/nextjsBlackLogo.svg'
 
 export default function Footer() {
 	return (
-		<footer className={styles.footer}>
-			<p>Built with </p>
-			<p className={styles.logo}>
-				<Image
-					src={'nextjsBlackLogo.svg'}
-					width={20}
-					height={20}
-					alt='Next.js'
-				/>
-				<img src='/nextjsBlackLogo.svg' alt='Next.js Logo' />
-			</p>
-		</footer>
+		<div className={styles.footer}>
+			<span className={styles.copyright}>
+				© 2021 - {new Date().getFullYear()} Douglas Richards
+			</span>
+			<span className={styles.credit}>Built with </span>
+
+			<Image
+				className={styles.logo}
+				src={nextLogo}
+				width={75}
+				height={45}
+				alt='Next.js'
+			/>
+		</div>
 	)
 }

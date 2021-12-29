@@ -1,26 +1,28 @@
 .nav {
-	width: 100%;
-	margin: 0px auto;
-	/* padding: 0 0 0 5px; */
 	display: flex;
+	width: 100%;
+	padding: 1rem;
 	justify-content: flex-end;
 	align-items: center;
-	background-color: rgb(165, 165, 165);
+	background-color: rgb(179, 179, 179);
 	border-bottom: 3px solid #ff8c00;
 }
 
 .logo {
+	margin-left: 20px;
 	margin-right: auto;
-	padding-left: 20px;
-	font-family: 'IBM Plex Sans';
+	font-size: 1.5rem;
+	color: rgb(73, 73, 73);
+	/* font-family: 'IBM Plex Sans'; */
 }
 
 .nav a {
 	margin-right: 55px;
-	font-family: 'IBM Plex Sans';
+	/* font-family: 'IBM Plex Sans'; */
 	font-size: 1.2rem;
 	font-weight: 600;
 	text-decoration: none;
+	color: rgb(73, 73, 73);
 }
 
 .nav a:hover {
