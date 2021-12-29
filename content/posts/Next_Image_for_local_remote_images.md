@@ -5,9 +5,10 @@ date: October 22, 2021
 createdAt: October 12, 2021 3:53 PM
 author: Douglas Richards
 excerpt: Using Nextjs Image component with local and remote files
-thumbnail: 'v1619638137/squares_pwjy6f.jpg'
-heroImage: 'v1619638137/squares_pwjy6f.jpg'
+thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
+heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
+imagealt: 'squares'
 ---
 
 The docs for the Next Image component treat local and remote image separately. This is a workaround for the issue.
@@ -15,6 +16,9 @@ The docs for the Next Image component treat local and remote image separately. T
 - Define image path
 - Define image url
 - Define image loader
+
+**This does not work when deployed**
+Setting the parameters in the next.config.js file means that all images are still prepended with the url. The pages will render with the local image but there will be a placeholder for the remote image that does not exist.
 
 ```
 // next.config.js
