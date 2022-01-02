@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600;700&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * html,
 body,
 #root {
@@ -24,6 +28,10 @@ p {
 	margin: 15px 0;
 }
 
+ul li {
+	margin-left: 30px;
+	/* list-style: inside; */
+}
 .not-found {
 	text-align: center;
 }
@@ -56,10 +64,10 @@ p {
   4. Add accessible line-height
   5. Improve text rendering
 */
-/* body {
+body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
-} */
+}
 /*
   6. Improve media defaults
 */
