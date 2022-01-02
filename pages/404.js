@@ -14,7 +14,7 @@ const NotFound = () => {
 	return (
 		<div className='not-found'>
 			<h1>Sorry...</h1>
-			<h2>What you`&apos`re looking for ain`&apos`t here :(</h2>
+			<h2>What you&apos;re looking for ain&apos;t here :(</h2>
 			<p>
 				Going back to the{' '}
 				<Link href='/'>

@@ -12,7 +12,7 @@ export default function Home() {
 					<link rel='icon' href='/favicon.ico' />
 				</Head>
 				<div className={styles.overview}>
-					<h1 className={styles.title}>Homepage</h1>
+					<h1 className='text-3xl font-bold '>Hello World!</h1>
 					<p className={styles.text}>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus animi
 						impedit suscipit architecto, odio inventore nostrum non neque dicta.

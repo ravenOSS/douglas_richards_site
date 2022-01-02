@@ -1,5 +1,6 @@
 .nav {
 	display: flex;
+	/* flex-wrap: wrap; */
 	width: 100%;
 	padding: 1rem;
 	justify-content: flex-end;
@@ -11,7 +12,9 @@
 .logo {
 	margin-left: 20px;
 	margin-right: auto;
+	padding: 20px;
 	font-size: 1.5rem;
+	font-weight: bold;
 	color: rgb(73, 73, 73);
 	/* font-family: 'IBM Plex Sans'; */
 }

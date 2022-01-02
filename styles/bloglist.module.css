@@ -1,6 +1,6 @@
 .main {
 	display: grid;
-	grid-template-columns: minmax(200px, 25%) 1fr minmax(200px, 25%);
+	grid-template-columns: minmax(100px, 20%) 1fr minmax(100px, 20%);
 	grid-template-rows: minmax(100px, 10%) 1fr;
 	grid-template-areas:
 		'sidebar_left heading sidebar_right'
