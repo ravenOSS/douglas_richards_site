@@ -11,13 +11,13 @@ exampleImage: ''
 imagealt: 'squares'
 ---
 
-The docs for the Next Image component treat local and remote image separately. This is a workaround for the issue.
+The docs for the Next Image component treat local and remote image separately. This is how to deal with the issue.
 
-- Define image path
+- Define image path in the `src` attribute.
 - Define image url
 - Define image loader
 
-**This does not work when deployed**
+**_This does not work when deployed._**
 Setting the parameters in the next.config.js file means that all images are still prepended with the url. The pages will render with the local image but there will be a placeholder for the remote image that does not exist.
 
 ```
