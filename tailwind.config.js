@@ -9,9 +9,13 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
+				sans: ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
+			},
+			container: {
+				center: true,
+				padding: '1rem',
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography')],
 }

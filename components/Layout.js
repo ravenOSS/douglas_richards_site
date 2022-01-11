@@ -1,16 +1,12 @@
 import Navbar from './Navbar'
-import Main from './Main'
 import Footer from './Footer'
-import styles from '../styles/layout.module.css'
 
 export default function Layout({ children }) {
 	return (
-		<>
-			<div className={styles.container}>
-				<Navbar />
-				<Main>{children}</Main>
-				<Footer />
-			</div>
-		</>
+		<div className='flex flex-col items-center justify-center min-w-full min-h-screen p-0 mx-0 '>
+			<Navbar />
+			<main>{children}</main>
+			<Footer />
+		</div>
 	)
 }
