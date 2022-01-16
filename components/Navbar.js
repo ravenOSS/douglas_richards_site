@@ -3,7 +3,6 @@ import Link from 'next/link'
 const Navbar = () => {
 	return (
 		<nav className='flex flex-col items-center content-end min-w-full px-10 py-4 m-0 md:flex-row '>
-			{/* <nav className='flex flex-wrap items-center content-end min-w-full px-10 py-4 m-0 bg-gray-300 border-b-2 border-orange-400'> */}
 			<div className=' md:mr-auto'>
 				<h2 className='text-2xl font-extrabold text-gray-600'>
 					Douglas Richards
