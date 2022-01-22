@@ -1,11 +1,11 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from './navbar'
+import Footer from './footer'
 
 export default function Layout({ children }) {
 	return (
-		<div className='flex flex-col items-center justify-center min-h-screen p-0 mx-0 max-width-1280 '>
+		<div className='flex flex-col min-h-screen width-full'>
 			<Navbar />
-			<main>{children}</main>
+			<main className='flex-grow'>{children}</main>
 			<Footer />
 		</div>
 	)

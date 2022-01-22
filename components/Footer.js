@@ -3,21 +3,25 @@ import nextLogo from '../public/nextjsBlackLogo.svg'
 
 export default function Footer() {
 	return (
-		<div className='flex items-center content-end min-w-full pt-4 pb-4 pl-12 pr-12 bg-gray-300 border-t-4 border-orange-400'>
-			<span className='mr-auto text-sm font-semibold text-gray-600'>
-				© 2021 - {new Date().getFullYear()} Douglas Richards
-			</span>
-			<span className='text-sm font-semibold text-gray-600 mr-3.5'>
-				Built with
-			</span>
+		<footer className='min-w-full px-12 py-4 bg-gray-300 border-t-2 border-orange-400 justify-self-end'>
+			<div className='flex flex-col items-center bg-green-100 md:justify-around max-width-md md:flex-row'>
+				<div className='text-sm font-semibold text-gray-600'>
+					<small>© 2018 - {new Date().getFullYear()} Douglas Richards</small>
+				</div>
+				<div className='flex items-center justify-center'>
+					<div className='text-sm font-semibold text-gray-600 mr-3.5'>
+						Built with
+					</div>
 
-			<Image
-				// className='pr-6'
-				src={nextLogo}
-				width={75}
-				height={45}
-				alt='Next.js'
-			/>
-		</div>
+					<Image
+						// className='pr-6'
+						src={nextLogo}
+						width={75}
+						height={45}
+						alt='Next.js'
+					/>
+				</div>
+			</div>
+		</footer>
 	)
 }
