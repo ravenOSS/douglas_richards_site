@@ -18,9 +18,25 @@ If the page content itself is not large enough to fill the remaining space, the 
 
 Note that although the title of the post includes Tailwind, the method is available in any CSS framework using flex layout.
 
-When creating an encapsulating layout component, it is important to use the `flex` and `flex-col` properties.
+When creating an encapsulating layout component, it is important to use the
 
-Then use the `flex-grow` property on the element that needs to expand to fill the vertical space and push the footer to the bottom of the page.
+```
+flex
+
+flex-col
+```
+
+properties.
+
+Then use the
+
+**flex-grow**
+
+```
+flex-grow
+```
+
+property on the element that needs to expand to fill the vertical space and push the footer to the bottom of the page.
 
 ```
 import Navbar from './navbar'

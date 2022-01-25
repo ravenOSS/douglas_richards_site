@@ -10,7 +10,7 @@ heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares
 exampleImage: ''
 ---
 
-For any developer blogger writing markdown, its obvious that a method is needed to render code examples. 
+For any developer blogger writing markdown, its obvious that a method is needed to render code examples.
 
 ReactMarkdown combined with React Syntax Highlighter yeilds a simple solution.
 
@@ -20,4 +20,6 @@ Here is a component that renders a markdown file:
 
 Here is a component that breaks out the processing of the code examples:
 
-Note that the codeblock.js component is imported into the xxxx.js file and used as an argument to the ReactMarkdown component.
+Note that the codeblock.js component is imported into the xxxx.js file and used as an argument to the ReactMarkdown block.
+
+Embedding code snippets in markdown paragraphs will result in a React error because the <pre> tag cannot be nested in a <p> tag.
