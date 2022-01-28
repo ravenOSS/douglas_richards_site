@@ -4,7 +4,7 @@ import nextLogo from '../public/nextjsBlackLogo.svg'
 export default function Footer() {
 	return (
 		<footer className='min-w-full px-12 py-4 bg-gray-300 border-t-2 border-orange-400 justify-self-end'>
-			<div className='flex flex-col items-center bg-green-100 md:justify-around max-width-md md:flex-row'>
+			<div className='flex flex-col items-center bg-green-200 md:justify-around max-width-md md:flex-row'>
 				<div className='text-sm font-semibold text-gray-600'>
 					<small>© 2018 - {new Date().getFullYear()} Douglas Richards</small>
 				</div>
