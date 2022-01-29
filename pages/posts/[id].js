@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import Codeblock from '../../components/codeblock'
+import Codeblock from '../../components/Codeblock'
 import Image from 'next/dist/client/image'
 import { getAllPostIds, getPostById } from '../../lib/getPosts'
 
