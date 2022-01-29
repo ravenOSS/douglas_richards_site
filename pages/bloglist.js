@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Pagetitle from '../components/pagetitle'
 import { getPosts } from '../lib/getPosts'
 
 export async function getStaticProps() {
