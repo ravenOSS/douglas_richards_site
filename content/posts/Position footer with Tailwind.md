@@ -71,3 +71,13 @@ export default MyApp
 ```
 
 The main tag is semantic html and is used to indicate the main content of the page.
+
+```
+<div class="flex flex-col min-h-screen">
+  <header class="p-2 bg-indigo-200">Header</header>
+  <main class="flex-1 p-2 bg-indigo-50">
+    <div class="mb-20">Content</div>
+  </main>
+  <footer class="p-2 bg-indigo-200">Footer</footer>
+</div>
+```

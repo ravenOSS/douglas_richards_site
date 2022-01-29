@@ -8,15 +8,15 @@ excerpt: Learning Tailwind has actually been a great learning experience for bui
 thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
 heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
+cardbg: bg-gray-300
+cardtextcolor: 'white'
 ---
 
-The terse syntax of Tailwind builds a steep learning curve and a reluctance to use it. 
+The terse syntax of Tailwind builds a steep learning curve and a reluctance to use it.
 
-However, the great documentation combined with Tailwind Intellisense in the VSCode IDE quickly lowers the barrier to learning. 
+However, the great documentation combined with Tailwind Intellisense in the VSCode IDE quickly lowers the barrier to learning.
 
 Even the example below of a Navbar quickly becomes a breeze to read and understand.
-
-
 
 ```
 import Link from 'next/link'
@@ -58,6 +58,21 @@ export default function Navbar() {
 	)
 }
 ```
-A widely voiced criticism of Tailwind is that all the CSS classes appearing on one line causes readability issues. Many ask for formatting similar to something like styled components. However, since Tailwind does not require the object like syntax of styled, each class appearing on a separate line would quickly detract from the readability of the code.
 
-I have found that using either a global css file or a css module requires continually jumping between editor panes. However, with the contained styling of Tailwind, its possible to have only a couple of tabs open at a time and be productive.
+A widely voiced criticism of Tailwind is that all the CSS classes appearing on one line causes readability issues. Reading this on a mobile phone, its obvious that the line wrap makes reading difficult. Many ask for formatting similar to something like styled components. However, since Tailwind does not require the object like syntax of styled, each class appearing on a separate line would quickly detract from the readability of the code.
+
+I have found that using either a conventional global css file or css modules requires continually jumping between editor panes. However, with the contained styling of Tailwind, its possible to have only a couple of tabs open at a time and be productive.
+
+A caveat is that the temptation to add a lot of styles with @apply to tailwind.config results in effectively a bloated global css file negating a supposed advantage of Tailwind.
+
+For classes not requiring reusability, the arbitrary value customization is simple to apply and remains an inline style.
+
+Points of view
+
+https://dev.to/brianboyko/tailwindcss-adds-complexity-does-nothing-3hpn
+
+https://blog.logrocket.com/why-you-shouldnt-use-inline-styling-in-production-react-apps/
+
+https://dev.to/neophen/tailwind-is-bad-because-i-don-t-like-it-24eh
+
+https://dev.to/benface/tailwind-css-might-not-be-for-you-jk0
