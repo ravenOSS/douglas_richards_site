@@ -1,6 +1,6 @@
 export default function Profile() {
 	return (
-		<div className='flex flex-col items-center flex-grow'>
+		<div className='flex flex-col items-center flex-grow p-4 mx-auto prose bg-green-200'>
 			<h1>Profile</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,

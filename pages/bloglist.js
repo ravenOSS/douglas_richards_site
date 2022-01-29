@@ -64,7 +64,7 @@ export default function BlogsListing({ allPostsData }) {
 					)
 				)}
 			</div>
-			<div className='flex flex-col flex-1 min-h-full p-2 my-2 bg-red-100 border border-pink-300 '>
+			{/* <div className='flex flex-col flex-1 min-h-full p-2 my-2 bg-red-100 border border-pink-300 '>
 				<p className='break-words'>
 					This the area for the right sidebar with a statement of interests.
 				</p>
@@ -79,7 +79,7 @@ export default function BlogsListing({ allPostsData }) {
 				<p className='break-words'>
 					Exploring web development, Internet of Things, and their convergence.
 				</p>
-			</div>
+			</div> */}
 		</div>
 	)
 }
