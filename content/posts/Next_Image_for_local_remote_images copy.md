@@ -5,8 +5,8 @@ date: October 22, 2021
 createdAt: October 12, 2021 3:53 PM
 author: Douglas Richards
 excerpt: Using Nextjs Image component with local and remote files
-thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
-heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
+thumbnail: 'v1619638137/squares_pwjy6f.jpg'
+heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
 imagealt: 'squares'
 introduction: |2
@@ -47,7 +47,7 @@ module.exports = {
 }
 
 // loader: 'cloudinary',
-// path: 'https://res.cloudinary.com/raveniot/image/upload/',
+// path: '',
 ```
 
 Note that the 'loader: 'cloudinary' is not required. Just the cloudinary domain is sufficient.

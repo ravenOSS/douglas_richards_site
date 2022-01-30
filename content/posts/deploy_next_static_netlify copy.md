@@ -6,8 +6,8 @@ createdAt: October 4, 2020 3:40 PM
 author: Douglas Richards
 excerpt: Easy Nextjs deploy to Netlify
 
-thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638150/symmetry_afzqhu.jpg'
-heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638113/collapse_c1vfyl.jpg'
+thumbnail: 'v1619638150/symmetry_afzqhu.jpg'
+heroImage: 'v1619638113/collapse_c1vfyl.jpg'
 exampleImage: ''
 imagealt: 'collapse'
 ---

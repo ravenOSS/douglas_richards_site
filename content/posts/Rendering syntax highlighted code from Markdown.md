@@ -6,7 +6,7 @@ createdAt: January 1, 2022 11:49 PM
 author: Douglas Richards
 excerpt: A combination of packages provides an easy way to render syntax highlighted code from Markdown.
 thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
-heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
+heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
 ---
 

@@ -7,7 +7,7 @@ author: Douglas Richards
 excerpt: Origami?
 thumbnail: 'v1619638113/collapse_c1vfyl.jpg'
 heroImage: 'v1619638113/collapse_c1vfyl.jpg'
-# heroImage: https://res.cloudinary.com/raveniot/image/upload/c_scale,w_1000/v1619638113/collapse_c1vfyl.jpg
+# heroImage: c_scale,w_1000/v1619638113/collapse_c1vfyl.jpg
 exampleImage: ''
 ---
 

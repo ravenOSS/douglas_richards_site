@@ -5,8 +5,8 @@ date: January 15, 2022
 createdAt: January 12, 2022 3:49 PM
 author: Douglas Richards
 excerpt: Getting a footer to stay at the page bottom is a common problem.
-thumbnail: 'https://res.cloudinary.com/raveniot/image/upload//v1619638137/squares_pwjy6f.jpg'
-heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
+thumbnail: '/v1619638137/squares_pwjy6f.jpg'
+heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
 ---
 

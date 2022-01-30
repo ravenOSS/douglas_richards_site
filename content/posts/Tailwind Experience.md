@@ -6,7 +6,7 @@ createdAt: January 14, 2022 3:49 PM
 author: Douglas Richards
 excerpt: Learning Tailwind has actually been a great learning experience for buiding CSS knowledge.
 thumbnail: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
-heroImage: 'https://res.cloudinary.com/raveniot/image/upload/v1619638137/squares_pwjy6f.jpg'
+heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
 cardbg: bg-gray-300
 cardtextcolor: 'white'
