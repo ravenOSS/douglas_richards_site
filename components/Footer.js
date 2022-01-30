@@ -17,8 +17,8 @@ export default function Footer() {
 						// className='pr-6'
 						// src={nextLogo}
 						src='/nextjsBlackLogo.svg'
-						width='75'
-						height='45'
+						width={75}
+						height={45}
 						alt='Next.js logo'
 					/>
 				</div>
