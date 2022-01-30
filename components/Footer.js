@@ -15,10 +15,11 @@ export default function Footer() {
 
 					<Image
 						// className='pr-6'
-						src={nextLogo}
-						width={75}
-						height={45}
-						alt='Next.js'
+						// src={nextLogo}
+						src='/nextjsBlackLogo.svg'
+						width='75'
+						height='45'
+						alt='Next.js logo'
 					/>
 				</div>
 			</div>
