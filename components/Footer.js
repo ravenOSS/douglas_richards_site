@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import nextLogo from '../public/nextjsBlackLogo.svg'
+import { staticLoader } from '../lib/staticLoader'
 
 export default function Footer() {
 	return (
@@ -12,14 +13,12 @@ export default function Footer() {
 					<div className='text-sm font-semibold text-gray-600 mr-3.5'>
 						Built with
 					</div>
-
 					<Image
-						// className='pr-6'
-						// src={nextLogo}
+						loader={staticLoader}
 						src='/nextjsBlackLogo.svg'
 						width={75}
 						height={45}
-						alt='Next.js logo'
+						alt='Next logo'
 					/>
 				</div>
 			</div>
