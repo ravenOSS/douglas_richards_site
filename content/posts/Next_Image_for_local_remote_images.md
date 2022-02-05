@@ -7,18 +7,17 @@ author: Douglas Richards
 excerpt: Using Nextjs Image component with local and remote files
 thumbnail: '/v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
-
+titlebackground: 'bg-blue-700'
 exampleImage: ''
 imagealt: 'squares'
-introduction: |2
-  Nextjs has really solid image handling capabilities.  However, the documentation details how to separately handle local and remote images but not when using both within a project.
-
-  This article describes how to use local and Cloudinary hosted images together with the   Netlify-CMS. simple example of how to use it with local and remote files. Nextjs has really   solid image handling capabilities.  This is a simple example of how to use it with local and   remote files. Nextjs has really solid image handling capabilities.  This is a simple example of   how to use it with local and remote files.
+introduction:
 ---
 
-Nextjs has really solid image handling capabilities. However, the documentation details how to separately handle local and remote images but not when using both within a project.
+Nextjs has really solid image handling capabilities with its <Image> component. However, the documentation details how to separately handle local and remote images but not when using both within a project.
 
-This article describes how to use local and Cloudinary hosted images together with the Netlify-CMS. simple example of how to use it with local and remote files. Nextjs has really solid image handling capabilities. This is a simple example of how to use it with local and remote files. Nextjs has really solid image handling capabilities. This is a simple example of how to use it with local and remote files.
+This article describes how to use local and Cloudinary hosted images together with the Netlify-CMS. Practical example of how to use Image with local and remote files.
+
+Nextjs has really solid image handling capabilities. This is a simple example of how to use it with local and remote files. Nextjs has really solid image handling capabilities. This is a simple example of how to use it with local and remote files.
 
 The docs for the Next Image component treat local and remote image separately. This is how to deal with the issue.
 
@@ -85,5 +84,13 @@ export default function Footer() {
 	)
 }
 ```
+
+```
+<Image loader={({src})=> src} src="/logo.png" layout="fill" />
+```
+
+https://stackoverflow.com/questions/70429040/getting-public-image-asset-in-next-js-project-folder-when-loader-configuration-p
+
+This Stackoverflow answer explains how to use the Nextjs Image component with local files using a per image loader.
 
 The documentation for the Nextjs image component is here: [Image Docs](https://nextjs.org/docs/advanced-features/custom-server-side-rendering#image-component)
