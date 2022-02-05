@@ -1,33 +1,52 @@
-import React from 'react'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 
-const Codeblock = {
-	code({ children }) {
-		return (
+const CodeBlock = {
+	code({ inline, className, children, ...props }) {
+		const match = /language-(\w+)/.exec(className || '')
+		return !inline && match ? (
 			<SyntaxHighlighter
 				style={vscDarkPlus}
-				customStyle={{
-					fontSize: '12px',
-					paddingLeft: '0px',
-					padding: '0px',
-				}}
-				lineNumberStyle={{
-					paddingRight: '5px',
-				}}
-				language='jsx'
-				showLineNumbers={true}
-				wrapLongLines={true}
-				wrapLines={true}
-				lineProps={{ style: { flexWrap: 'wrap' } }}
+				language={match[1]}
+				PreTag='div'
+				{...props}
 			>
-				{String(children).replace(/\n$/, '').replace(/\t/g, '  ')}
+				{String(children).replace(/\n$/, '')}
 			</SyntaxHighlighter>
+		) : (
+			<code className={className} {...props}>
+				{children}
+			</code>
 		)
 	},
 }
+export default CodeBlock
 
-export default Codeblock
+// const Codeblock = {
+// 	code({ children }) {
+// 		return (
+// 			<SyntaxHighlighter
+// 				style={vscDarkPlus}
+// 				customStyle={{
+// 					fontSize: '12px',
+// 					paddingLeft: '0px',
+// 					padding: '0px',
+// 				}}
+// 				PreTag='div'
+// 				lineNumberStyle={{
+// 					paddingRight: '5px',
+// 				}}
+// 				language='jsx'
+// 				showLineNumbers={true}
+// 				wrapLongLines={true}
+// 				wrapLines={true}
+// 				lineProps={{ style: { flexWrap: 'wrap' } }}
+// 			>
+// 				{String(children).replace(/\n$/, '').replace(/\t/g, '  ')}
+// 			</SyntaxHighlighter>
+// 		)
+// 	},
+// }
 
 // regex replace(/\n$/, '') replaces the newline character
 // regex replace(/\t/g, ' ') /g replaces all tabs with spaces. Use two spaces to compact code.
