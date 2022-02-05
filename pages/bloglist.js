@@ -14,7 +14,7 @@ export async function getStaticProps() {
 export default function BlogsListing({ allPostsData }) {
 	return (
 		// Page layout
-		<div className='flex flex-col items-center justify-center flex-grow sm:flex-row min-w-min'>
+		<div className='flex flex-col items-center justify-center sm:flex-row max-width-md'>
 			{/* <div className='flex flex-col justify-center min-h-full p-1 my-2 bg-red-100 border border-pink-300 '> */}
 			<div className='hidden min-h-full p-1 my-2 bg-red-100 border border-pink-300 sm:block'>
 				<p className='text-center break-words'>Social</p>
@@ -24,12 +24,11 @@ export default function BlogsListing({ allPostsData }) {
 					({
 						id,
 						date,
-						thumbnail,
+						// thumbnail,
 						title,
-						imagealt,
+						// imagealt,
 						heroImage,
 						excerpt,
-						body,
 					}) => (
 						<article
 							key={id}
@@ -38,16 +37,16 @@ export default function BlogsListing({ allPostsData }) {
 							<Link href={`/posts/${id}`} passHref>
 								{/* <div className='grid items-center justify-center grid-cols-2 gap-2 p-5 border-2 border-orange-400 rounded-lg'> */}
 								<div className='flex flex-col '>
-									{/* <div className='p-5 display-block '> */}
-									<Image
-										className='rounded-lg '
-										src={heroImage}
-										width={175}
-										height={175}
-										layout='responsive'
-										alt={imagealt}
-									/>
-									{/* </div> */}
+									<div className='p-5 display-block '>
+										<Image
+											className='rounded-lg '
+											src={heroImage}
+											width={175}
+											height={175}
+											layout='responsive'
+											alt={allPostsData.title}
+										/>
+									</div>
 									<div className='flex flex-col items-center pl-2 m-2'>
 										<h2 className='my-2 text-xl font-bold text-center'>
 											{title}
