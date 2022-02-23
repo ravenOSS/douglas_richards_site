@@ -4,6 +4,7 @@ import remarkGfm from 'remark-gfm'
 import Codeblock from '../../components/Codeblock'
 import Image from 'next/dist/client/image'
 import { getAllPostIds, getPostById } from '../../lib/getPosts'
+import styles from './post.module.css'
 
 export async function getStaticPaths() {
 	const paths = getAllPostIds()
@@ -24,53 +25,43 @@ export async function getStaticProps({ params }) {
 
 // gray-matter returns frontmatter as 'data' and body as 'content'
 export default function Post({ postData }) {
-	const boxBG = postData.data.titlebackground
-	console.log(postData.data.titlebackground)
-	console.log(boxBG)
 	return (
-		<article className='flex flex-col items-center bg-gray-300 dark:bg-gray-700'>
-			<div
-				className={`w-20 h-20 ${postData.data.titlebackground} border border-blue-800 text-pink-600`}
-			>
-				A box
-			</div>
-			<div className='grid items-center justify-center max-w-screen-lg p-0 mx-0 bg-gray-400 col-1 scroll-m-0'>
-				<div className='mx-2'>
+		<div className='mx-auto  grid  grid-cols-1 place-items-center justify-center p-2 sm:grid-cols-3 md:grid-cols-[minmax(25px,10%)_minmax(300px,_1fr)_minmax(25px,10%)]'>
+			<article className='prose prose-sm grid dark:prose-invert sm:col-start-2 sm:col-end-3  '>
+				<div className='relative   '>
 					<Image
-						className='object-fill rounded-lg drop-shadow-2xl aspect-square'
+						className='aspect-square rounded-lg border-8 border-gray-500'
 						src={postData.data.thumbnail}
 						alt={postData.data.title}
-						width={300}
-						height={300}
+						width={324}
+						height={324}
 						layout='responsive'
-						priority='true'
+						// objectFit='cover'
+						// objectPosition={'center'}
+						priority
 					/>
+					<h1
+						className={`  absolute bottom-4 right-4 px-2   ${postData.data.postColor}  rounded-md`}
+					>
+						{postData.data.title}
+					</h1>
 				</div>
-
-				<h1 className='text-2xl font-bold text-center bg-gray-600 dark:text-gray-300'>
-					{postData.data.title}
-				</h1>
-				<h3
-					className={`mt-2 ml-2 text-sm font-bold text-gray-700 dark:text-gray-200 ${postData.data.titlebackground}`}
-				>
-					{postData.data.date}
-				</h3>
-				{/* <div
-					className={`w-20 h-20 ${postData.data.titlebackground} border border-blue-800 text-pink-600`}
-          >
-					A box
-				</div> */}
-				<h4
-					className={`w-fit h-20 ${postData.data.titlebackground} border border-blue-800 text-zinc-300`}
-				>
-					{postData.data.title}
-				</h4>
-				<div className='p-2 mx-0 my-2 prose prose-lg bg-green-200 sm:p-3 '>
-					<ReactMarkdown components={Codeblock} remarkPlugins={[remarkGfm]}>
-						{postData.content}
-					</ReactMarkdown>
-				</div>
+				<h4>{postData.data.date}</h4>
+				<ReactMarkdown components={Codeblock} remarkPlugins={[remarkGfm]}>
+					{postData.content}
+				</ReactMarkdown>
+				{/* </section> */}
+			</article>
+			<div className='md:col-span-1 md:col-start-1'>
+				<aside className='prose prose-sm flex flex-col align-text-top  dark:prose-invert'>
+					This is the left sidebar
+				</aside>
 			</div>
-		</article>
+			<div className=' flex flex-col items-start md:col-span-1 md:col-start-3'>
+				<aside className='prose prose-sm   dark:prose-invert'>
+					This is the right sidebar
+				</aside>
+			</div>
+		</div>
 	)
 }
