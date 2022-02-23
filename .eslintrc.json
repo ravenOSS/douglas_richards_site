@@ -9,7 +9,9 @@
 		"plugin:react/recommended",
 		"plugin:react/jsx-runtime",
 		// "plugin:node/recommended",
-		"prettier"
+		"next",
+		"prettier",
+		"plugin:@next/next/recommended"
 	],
 	"parserOptions": {
 		"ecmaFeatures": {
