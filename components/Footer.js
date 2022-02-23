@@ -3,26 +3,26 @@ import nextLogo from '../public/nextjsBlackLogo.svg'
 import { staticLoader } from '../lib/staticLoader'
 
 export default function Footer() {
-  return (
-    <footer className='min-w-full px-12 py-4 bg-gray-300 border-t-2 border-orange-400 justify-self-end'>
-      <div className='flex flex-col items-center bg-green-200 md:justify-around max-width-md md:flex-row'>
-        <div className='text-sm font-semibold text-gray-600'>
-          <small>© 2018 - {new Date().getFullYear()} Douglas Richards</small>
-        </div>
-        <div className='flex items-center justify-center'>
-          <div className='text-sm font-semibold text-gray-600 mr-3.5'>
-            Built with
-          </div>
-          <Image
-            loader={staticLoader}
-            // src='/nextjsBlackLogo.svg'
-            src={nextLogo}
-            width={75}
-            height={45}
-            alt='Next logo'
-          />
-        </div>
-      </div>
-    </footer>
-  )
+	return (
+		<footer className='w-screen px-12 py-4 bg-blue-300 border-t-2 border-orange-400 '>
+			<div className='flex flex-col items-center justify-around bg-green-200 max-width-md sm:flex-row'>
+				<div className='text-xs font-semibold text-gray-600'>
+					© 2018 - {new Date().getFullYear()} Douglas Richards
+				</div>
+				<div className='flex items-center justify-center'>
+					<div className='mr-2 text-xs font-semibold text-gray-600'>
+						Built with
+					</div>
+					<Image
+						loader={staticLoader}
+						// src='/nextjsBlackLogo.svg'
+						src={nextLogo}
+						width={45}
+						height={27}
+						alt='Next logo'
+					/>
+				</div>
+			</div>
+		</footer>
+	)
 }
