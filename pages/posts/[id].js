@@ -4,7 +4,6 @@ import remarkGfm from 'remark-gfm'
 import Codeblock from '../../components/Codeblock'
 import Image from 'next/dist/client/image'
 import { getAllPostIds, getPostById } from '../../lib/getPosts'
-import styles from './post.module.css'
 
 export async function getStaticPaths() {
 	const paths = getAllPostIds()
