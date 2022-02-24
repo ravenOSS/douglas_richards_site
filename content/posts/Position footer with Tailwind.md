@@ -7,6 +7,7 @@ author: Douglas Richards
 excerpt: Getting a footer to stay at the page bottom is a common problem.
 thumbnail: '/v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
+postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
 ---
 

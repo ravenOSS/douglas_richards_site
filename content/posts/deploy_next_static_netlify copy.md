@@ -8,6 +8,7 @@ excerpt: Easy Nextjs deploy to Netlify
 
 thumbnail: 'v1619638150/symmetry_afzqhu.jpg'
 heroImage: 'v1619638113/collapse_c1vfyl.jpg'
+postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
 imagealt: 'collapse'
 ---

@@ -8,7 +8,7 @@ excerpt: Overcoming eslint and prettier errors
 thumbnail: 'v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
-cardbg: bg-gray-300
+postColor: 'bg-orange-600 dark:bg-blue-600'
 cardtextcolor: 'white'
 ---
 

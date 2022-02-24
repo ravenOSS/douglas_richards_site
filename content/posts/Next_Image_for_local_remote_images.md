@@ -7,7 +7,7 @@ author: Douglas Richards
 excerpt: Using Nextjs Image component with local and remote files
 thumbnail: '/v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
-titlebackground: 'bg-blue-700'
+postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
 imagealt: 'squares'
 introduction:
