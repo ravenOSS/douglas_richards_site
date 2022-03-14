@@ -13,37 +13,46 @@ export async function getStaticProps() {
 }
 export default function BlogsListing({ allPostsData }) {
 	return (
-		// Page layout
-		<div className='flex flex-col items-center justify-center mx-auto max-width-md'>
+		<div className='max-width-lg prose mx-auto grid grid-cols-1 items-center justify-center  gap-4 bg-gray-200 px-2 dark:prose-invert dark:bg-gray-700 md:grid-cols-2'>
 			{allPostsData.map(
 				({
 					id,
 					date,
-					// thumbnail,
+					thumbnail,
 					title,
 					// imagealt,
 					heroImage,
 					excerpt,
+					postColor,
 				}) => (
-					<article key={id} className='border-2 border-orange-400 rounded-lg '>
+					<article
+						key={id}
+						className='my-2 rounded-lg border-2 border-orange-400 '
+					>
 						<Link href={`/posts/${id}`} passHref>
-							{/* <div className='grid items-center justify-center grid-cols-2 gap-2 p-5 border-2 border-orange-400 rounded-lg'> */}
-							<div className='flex flex-col '>
-								<div className='p-5 display-block '>
+							<div className='grid grid-cols-1 items-center justify-center gap-2 rounded-lg border-2 border-orange-400 p-5 md:grid-cols-2'>
+								{/* <div className='flex flex-col '> */}
+								<div className='relative'>
 									<Image
-										className='rounded-lg '
-										src={heroImage}
-										width={175}
-										height={175}
+										className=' aspect-square rounded-lg '
+										src={thumbnail}
+										alt={title}
+										width={600}
+										height={600}
 										layout='responsive'
-										alt={allPostsData.title}
+										priority
 									/>
+									<figcaption
+										className={`absolute bottom-2 right-1 ${postColor} rounded-md p-1 text-xs  dark:prose-invert`}
+									>
+										{title}
+									</figcaption>
 								</div>
-								<div className='flex flex-col items-center pl-2 m-2'>
-									<h2 className='my-2 text-xl font-bold text-center'>
+								<div className='m-2 flex flex-col items-center pl-2'>
+									<h2 className='my-2 text-center text-xl font-bold'>
 										{title}
 									</h2>
-									<h3 className='text-lg font-normal text-center'>{excerpt}</h3>
+									<h3 className='text-center text-lg font-normal'>{excerpt}</h3>
 									<h4 className='my-2 text-sm'>{date}</h4>
 								</div>
 							</div>

@@ -2,9 +2,9 @@ import { MenuIcon } from '@heroicons/react/solid'
 
 function MobileMenu() {
 	return (
-		<div>
-			<MenuIcon className='w-4 h-4 text-gray-700 dark:text-gray-300' />
-		</div>
+		<button>
+			<MenuIcon className='h-4 w-4 text-gray-700 dark:text-pink-300 sm:hidden' />
+		</button>
 	)
 }
 

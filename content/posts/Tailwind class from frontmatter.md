@@ -50,9 +50,11 @@ We can use the <postColor> field to set a background color for post elements and
 </h3>
 ```
 
+Where's the {postData.data.date} coming from? This is returned from getStaticProps() and getPostById in the [id].js component.
+
 However, when rendered, the background color will not be applied to the post. Inspecting the element using DevTools, the utility class is present. But, upon closer inspection, the class, if present in the parent, is being inherited. What's going on?
 
-The reason is that Tailwind scans the entire project for TW utility classes using regex and builds a project CSS file ahead of the project build stage. So, because the project has not been built, the utility class interpolation has not yet completed. Tailwind does not create CSS with this class (unless it has been used elsewhere in the project).
+The reason is that Tailwind scans the entire project for TW utility classes using regex and gathers all valid TW classes into a project CSS file ahead of the project build stage. So, because the project has not been built, the utility class interpolation has not yet completed. Tailwind does not create CSS with this class (unless it has been used elsewhere in the project).
 
 ```
 module.exports = {
