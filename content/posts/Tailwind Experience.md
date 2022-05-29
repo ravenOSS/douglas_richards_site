@@ -13,7 +13,7 @@ cardbg: bg-gray-300
 cardtextcolor: 'white'
 ---
 
-The terse syntax of Tailwind builds a steep learning curve and a reluctance to use it.
+The terse syntax of Tailwind constructs a steep learning curve and creates a reluctance to use it.
 
 However, the great documentation combined with Tailwind Intellisense in the VSCode IDE quickly lowers the barrier to learning.
 
