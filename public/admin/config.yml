@@ -47,12 +47,7 @@ collections:
           widget: 'image',
           required: false,
         }
-      - {
-          label: 'Example Image',
-          name: 'exampleImage',
-          widget: 'image',
-          required: false,
-        }
+      - {label: 'postColor', name: 'colorblock', widget: 'string'}
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'config'

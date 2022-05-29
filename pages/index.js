@@ -1,6 +1,9 @@
 import Link from 'next/link'
 import Head from 'next/head'
 
+
+//! metatags: nest Link
+
 export default function Home() {
 	return (
 		<>
@@ -9,8 +12,8 @@ export default function Home() {
 				<meta name='description' content='Douglas Richards Blog' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className='prose-invert flex grow flex-col items-center justify-center dark:bg-gray-700 dark:text-gray-200'>
-				<h1 className='text-bold mx-auto my-4 text-center text-2xl text-gray-50 sm:text-lg'>
+			<div className='prose-invert flex-grow flex-col justify-center  dark:bg-gray-700 dark:text-gray-200'>
+				<h1 className='text-bold mx-auto my-4 text-center text-4xl font-bold text-gray-50 sm:text-lg'>
 					Hello Cosmos!
 				</h1>
 				<div className='columns-1 gap-6 p-5 sm:columns-2 md:columns-3'>
