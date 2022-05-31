@@ -23,31 +23,32 @@ export async function getStaticProps({ params }) {
 }
 
 // gray-matter returns frontmatter as 'data' and body as 'content'
+//! Note the backticks to allow JSX for postColor
 export default function Post({ postData }) {
 	return (
-		<div className='  grid  grid-cols-1 grid-rows-3  gap-2   sm:grid-rows-1'>
-			<div className='prose mx-auto grid grid-cols-1 items-center bg-gray-200 p-4 dark:prose-invert dark:bg-gray-700'>
-				<div className='relative'>
-					<Image
-						className='aspect-square rounded-lg border-8 border-gray-500'
-						src={postData.data.thumbnail}
-						alt={postData.data.title}
-						width={600}
-						height={600}
-						layout='responsive'
-						priority
-					/>
-					<figcaption
-						className={`absolute bottom-2 right-1 ${postData.data.postColor} rounded-md p-1 text-xs  dark:prose-invert`}
-					>
-						{postData.data.title}
-					</figcaption>
-				</div>
-				<h4>{postData.data.date}</h4>
-				<ReactMarkdown components={Codeblock} remarkPlugins={[remarkGfm]}>
-					{postData.content}
-				</ReactMarkdown>
-			</div>
+		<div className='flex flex-col items-center  justify-center bg-gray-200 p-4 dark:bg-gray-700'>
+			{postData.data.title}
+			<h4>{postData.data.date}</h4>
+			<ReactMarkdown components={Codeblock} remarkPlugins={[remarkGfm]}>
+				{postData.content}
+			</ReactMarkdown>
 		</div>
 	)
+}
+
+{
+	/* <div className='relative'>
+	<Image
+		className='aspect-square rounded-lg border-8 border-gray-500'
+		src={postData.data.thumbnail}
+		alt={postData.data.title}
+		width={600}
+		height={600}
+		layout='responsive'
+		priority
+	/>
+
+	<figcaption
+		className={`absolute bottom-2 right-1 ${postData.data.postColor} rounded-md p-1 text-xs  dark:prose-invert`}
+	></figcaption> */
 }

@@ -26,16 +26,27 @@ export default function Navbar() {
 					{isBurgerOpen ? (
 						<div ref={menuRef}>
 							<div className='flex flex-col items-end bg-gray-100 py-0   text-gray-200 dark:bg-gray-500 sm:hidden'>
-								<MenuIcon
+								<svg
+									xmlns='http://www.w3.org/2000/svg'
 									onClick={() => setIsBurgerOpen(false)}
-									className='z-20 h-4 w-4 stroke-gray-700 dark:stroke-gray-200 sm:hidden'
-								/>
+									className='h-4 w-4 sm:hidden'
+									fill='none'
+									viewBox='0 0 24 24'
+									stroke='currentColor'
+									strokeWidth={2}
+								>
+									<path
+										strokeLinecap='round'
+										strokeLinejoin='round'
+										d='M4 6h16M4 12h16M4 18h16'
+									/>
+								</svg>
 								{navItems.map(({ url, label }) => (
 									<div key={label} className='w-fit  py-2 px-2'>
 										<Link href={url} passHref>
 											<a
 												onClick={() => setIsBurgerOpen(false)}
-												className='  font-bold text-gray-700 no-underline dark:text-gray-200  sm:text-base md:text-lg '
+												className='  font-extralight text-gray-700 no-underline dark:text-gray-200  sm:text-base md:text-lg '
 											>
 												{label}
 											</a>
@@ -45,17 +56,28 @@ export default function Navbar() {
 							</div>
 						</div>
 					) : (
-						<MenuIcon
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
 							onClick={() => setIsBurgerOpen(true)}
-							className='z-20 h-4 w-4 fill-gray-700 stroke-gray-700 dark:fill-gray-200 dark:stroke-gray-200 sm:hidden'
-						/>
+							className='h-4 w-4 sm:hidden'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+							strokeWidth={2}
+						>
+							<path
+								strokeLinecap='round'
+								strokeLinejoin='round'
+								d='M4 6h16M4 12h16M4 18h16'
+							/>
+						</svg>
 					)}
 				</div>
 				<div className='desktop-menu hidden items-center py-2 sm:flex'>
 					{navItems.map(({ url, label }) => (
-						<div key={label} className='w-16 items-center px-1 md:w-24'>
+						<div key={label} className='w-16  px-1 md:w-24'>
 							<Link href={url} passHref>
-								<a className='font-bold  text-gray-700 no-underline transition duration-300 hover:text-lg   dark:text-gray-200 sm:text-base md:text-lg '>
+								<a className='font-extralight  text-gray-700 no-underline transition duration-300 hover:text-lg   dark:text-gray-200 sm:text-base md:text-lg '>
 									{label}
 								</a>
 							</Link>

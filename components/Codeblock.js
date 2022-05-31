@@ -7,18 +7,18 @@ const Codeblock = {
 			<SyntaxHighlighter
 				style={vscDarkPlus}
 				customStyle={{
-					fontSize: '14px',
+					fontSize: '8px',
 					// paddingLeft: '1px',
 					// padding: '20px',
 					// border: '5px',
 				}}
-				PreTag='div'
+				// PreTag='div'
 				lineNumberStyle={{
 					paddingRight: '20px',
 				}}
 				language='jsx'
 				showLineNumbers={true}
-				wrapLongLines={false}
+				wrapLongLines={true}
 				wrapLines={true}
 				lineProps={{ style: { flexWrap: 'wrap' } }}
 			>
