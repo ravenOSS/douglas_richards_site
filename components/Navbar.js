@@ -9,6 +9,9 @@ const navItems = [
 	{ url: '/profile', label: 'Profile' },
 ]
 
+//TODO: add X to close navbar
+//TODO: increas padding on close icon to 48 x 48 px
+
 export default function Navbar() {
 	const [isBurgerOpen, setIsBurgerOpen] = useState(false)
 	const menuRef = useRef(null)
@@ -18,8 +21,8 @@ export default function Navbar() {
 	return (
 		<nav className='  flex w-full justify-center bg-green-400 py-4'>
 			<div className=' relative  flex  w-4/5 max-w-7xl items-center justify-between bg-blue-300 px-1 dark:bg-blue-800'>
-				<div className=' font-extrabold text-gray-700 dark:text-gray-200 sm:text-lg md:text-2xl'>
-					Douglas Richards
+				<div className=' font-bold text-gray-700 dark:text-gray-200 sm:text-lg md:text-2xl'>
+					douglas richards
 				</div>
 
 				<div className=' absolute top-0.5 right-1 z-20 flex flex-col items-end justify-center'>
@@ -38,9 +41,10 @@ export default function Navbar() {
 									<path
 										strokeLinecap='round'
 										strokeLinejoin='round'
-										d='M4 6h16M4 12h16M4 18h16'
+										d='M6 18L18 6M6 6l12 12'
 									/>
 								</svg>
+
 								{navItems.map(({ url, label }) => (
 									<div key={label} className='w-fit  py-2 px-2'>
 										<Link href={url} passHref>

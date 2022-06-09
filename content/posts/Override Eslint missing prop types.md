@@ -12,7 +12,7 @@ postColor: 'bg-orange-600 dark:bg-blue-600'
 cardtextcolor: 'white'
 ---
 
-Adding "react/prop-types": "ignore" to the .eslintrc.js file will ignore the missing prop types error.
+Adding "react/prop-types": "ignore" to the .eslintrc.js file will override the missing prop types error.
 
 ```
 {
@@ -46,4 +46,6 @@ Adding "react/prop-types": "ignore" to the .eslintrc.js file will ignore the mis
 }
 ```
 
+```
 <h3 class="mt-2 ml-2 text-sm font-bold text-gray-700 bg-green-700 dark:text-gray-200">February 2, 2022</h3>
+```
