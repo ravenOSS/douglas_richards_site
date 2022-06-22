@@ -4,8 +4,8 @@ import { staticLoader } from '../lib/staticLoader'
 
 export default function Footer() {
 	return (
-		<footer className='w-full border-t-2 border-orange-400 bg-blue-300 px-12 py-4 '>
-			<div className=' max-width-md flex flex-col items-center justify-around bg-green-200 sm:flex-row'>
+		<footer className='flex w-full justify-center border-t-2 border-orange-400 bg-blue-300 px-12 py-4 '>
+			<div className=' flex w-4/5 max-w-7xl flex-col items-center justify-around bg-green-200 sm:flex-row'>
 				<div className='text-xs font-semibold text-gray-600'>
 					© 2018 - {new Date().getFullYear()} Douglas Richards
 				</div>

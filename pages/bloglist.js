@@ -13,7 +13,7 @@ export async function getStaticProps() {
 }
 export default function BlogsListing({ allPostsData }) {
 	return (
-		<div className='max-width-xl  mx-auto grid grid-cols-1 items-center justify-center  gap-4 bg-gray-200 px-2  dark:bg-gray-700 md:grid-cols-2'>
+		<div className='max-width-xl  mx-auto grid w-96 grid-cols-1 items-center justify-center  gap-4 bg-gray-200 px-2  dark:bg-gray-700 md:grid-cols-2'>
 			{allPostsData.map(
 				({
 					id,
@@ -29,33 +29,18 @@ export default function BlogsListing({ allPostsData }) {
 						key={id}
 						className='my-2 rounded-lg border-2 border-orange-400 '
 					>
-						<div className='grid  grid-cols-2 items-center justify-center gap-2  p-5'>
-							<div className='relative col-span-1 col-start-1'>
-								<Image
-									className='  rounded-lg '
-									src={thumbnail}
-									alt={title}
-									width={200}
-									height={200}
-									layout='responsive'
-									priority
-								/>
-								<figcaption
-									className={`absolute bottom-2 right-1 ${postColor} rounded-md p-1 text-xs  dark:prose-invert`}
-								>
-									{title}
-								</figcaption>
-							</div>
-							<div className='col-span-1 col-start-2 m-2 flex flex-col items-center pl-2'>
-								<h4 className='my-2 text-xs'>{date}</h4>
-								<h2 className='my-2 text-center text-lg font-bold'>{title}</h2>
-								<h3 className='text-center '>{excerpt}</h3>
-								<button>
-									<Link href={`/posts/${id}`} passHref>
-										Read More
-									</Link>
-								</button>
-							</div>
+						<div className='flex  flex-col items-center justify-center gap-2  p-5'>
+							<div
+								className={`${postColor} relative h-8 w-11/12 rounded`}
+							></div>
+							<h4 className='my-2 text-xs'>{date}</h4>
+							<h2 className='my-2 text-center text-lg font-bold'>{title}</h2>
+							<h3 className='text-center '>{excerpt}</h3>
+							<button className='m-1 rounded-sm px-2 py-1 dark:bg-gray-200 dark:text-gray-700'>
+								<Link href={`/posts/${id}`} passHref>
+									Read More
+								</Link>
+							</button>
 						</div>
 					</article>
 				)

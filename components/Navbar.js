@@ -7,6 +7,7 @@ const navItems = [
 	{ url: '/', label: 'Home' },
 	{ url: '/bloglist', label: 'Blog' },
 	{ url: '/profile', label: 'Profile' },
+	{ url: '/connect', label: 'Connect' },
 ]
 
 //TODO: add X to close navbar

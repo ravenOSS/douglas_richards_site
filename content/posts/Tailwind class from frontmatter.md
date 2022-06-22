@@ -1,5 +1,5 @@
 ---
-title: Define Tailwind class in frontmatter
+title: Define Tailwind class in markdown frontmatter
 slug: Tailwind Background
 date: February 2, 2022
 createdAt: February 1,2022 3:40 PM
