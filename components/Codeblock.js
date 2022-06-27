@@ -1,5 +1,7 @@
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 const Codeblock = {
 	code({ children }) {
@@ -7,19 +9,18 @@ const Codeblock = {
 			<SyntaxHighlighter
 				style={vscDarkPlus}
 				customStyle={{
-					fontSize: '8px',
+					fontSize: '20px',
 					// paddingLeft: '1px',
 					// padding: '20px',
 					// border: '5px',
 				}}
 				// PreTag='div'
-				lineNumberStyle={{
-					paddingRight: '20px',
-				}}
+
 				language='jsx'
 				showLineNumbers={true}
-				wrapLongLines={true}
-				wrapLines={true}
+				// lineNumberContainerStyle={{ paddingRight: '50px' }}
+				wrapLongLines={false}
+				wrapLines={false}
 				lineProps={{ style: { flexWrap: 'wrap' } }}
 			>
 				{String(children).replace(/\n$/, '').replace(/\t/g, '  ')}
