@@ -13,7 +13,7 @@ export async function getStaticProps() {
 }
 export default function BlogsListing({ allPostsData }) {
 	return (
-		<div className='max-width-xl  mx-auto grid w-96 grid-cols-1 items-center justify-center  gap-4 bg-gray-200 px-2  dark:bg-gray-700 md:grid-cols-2'>
+		<div className='max-width-xl  mx-auto grid w-11/12 grid-cols-1 items-center justify-center  gap-4 bg-gray-200 px-2  dark:bg-gray-700 md:grid-cols-2'>
 			{allPostsData.map(
 				({
 					id,
@@ -24,20 +24,25 @@ export default function BlogsListing({ allPostsData }) {
 					heroImage,
 					excerpt,
 					postColor,
+					category,
 				}) => (
 					<article
 						key={id}
 						className='my-2 rounded-lg border-2 border-orange-400 '
 					>
-						<div className='flex  flex-col items-center justify-center gap-2  p-5'>
-							<div
-								className={`${postColor} relative h-8 w-11/12 rounded`}
-							></div>
+						<div className='flex  flex-col items-center justify-center   p-5'>
+							<div className={`${postColor} relative h-8 w-11/12 rounded-lg`}>
+								<figcaption
+									className={`absolute bottom-1 right-1 rounded-md p-1 text-xs text-gray-200  dark:text-gray-700`}
+								>
+									{category}
+								</figcaption>
+							</div>
 							<h4 className='my-2 text-xs'>{date}</h4>
 							<h2 className='my-2 text-center text-lg font-bold'>{title}</h2>
 							<h3 className='text-center '>{excerpt}</h3>
-							<button className='m-1 rounded-sm px-2 py-1 dark:bg-gray-200 dark:text-gray-700'>
-								<Link href={`/posts/${id}`} passHref>
+							<button className='m-1 rounded-sm px-2 py-1 text-sm dark:bg-gray-200 dark:text-gray-700'>
+								<Link className='' href={`/posts/${id}`} passHref>
 									Read More
 								</Link>
 							</button>
