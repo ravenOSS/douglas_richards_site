@@ -9,6 +9,7 @@ thumbnail: '/v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
+category: 'CSS'
 ---
 
 By using a flexbox container, we can arrange our pages so that the navbar correctly positions to the top of the page and the footer is positioned at the bottom of the page (or the bottom of the content if it is greater than the screen height).

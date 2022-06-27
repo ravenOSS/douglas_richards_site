@@ -8,6 +8,7 @@ excerpt: Colorful?
 thumbnail: 'v1619638113/collapse_c1vfyl.jpg'
 heroImage: 'v1619638113/collapse_c1vfyl.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'
+category: 'CSS'
 exampleImage: ''
 ---
 

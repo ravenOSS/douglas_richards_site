@@ -11,6 +11,7 @@ heroImage: 'v1619638113/collapse_c1vfyl.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
 imagealt: 'collapse'
+category: 'CSS'
 ---
 
 Deploying a Next static site to Netlify triggers the automatic installation of the Next build plugin. However, this plugin requires that the built assets be placed in .next. This is not the case for static sites.

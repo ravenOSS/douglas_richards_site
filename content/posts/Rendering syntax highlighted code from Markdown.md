@@ -9,6 +9,7 @@ thumbnail: 'v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
+category: 'Syntax Highlighter'
 ---
 
 For any developer blogger writing markdown, its obvious that a method is needed to render code examples.

@@ -11,6 +11,7 @@ postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
 cardbg: bg-gray-300
 cardtextcolor: 'white'
+category: 'CSS'
 ---
 
 The terse syntax of Tailwind constructs a steep learning curve and creates a reluctance to use it.

@@ -10,6 +10,7 @@ heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''
 postColor: 'bg-orange-600 dark:bg-blue-600'
 cardtextcolor: 'white'
+category: 'Linter'
 ---
 
 Adding "react/prop-types": "ignore" to the .eslintrc.js file will override the missing prop types error.

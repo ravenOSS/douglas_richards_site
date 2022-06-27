@@ -10,6 +10,7 @@ heroImage: 'v1619638137/squares_pwjy6f.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'
 exampleImage: ''
 imagealt: 'squares'
+category: 'CSS'
 ---
 
 When using a service provider such as Cloudinary, the configuration will result in all image URLs being prepended with the cloudinary domain and,of course, they do not display.
