@@ -1,11 +1,11 @@
 ---
-title: Collapse!
+title: Netlify Deployment
 slug: collapse
 date: November 8, 2020
 createdAt: October 4, 2020 3:40 PM
 author: Douglas Richards
-excerpt: Easy Nextjs deploy to Netlify and even more goodies
-
+issue: Nextjs deployment to Netlify
+solution: Use the Netlify CMS to deploy to Netlify
 thumbnail: 'v1619638150/symmetry_afzqhu.jpg'
 heroImage: 'v1619638113/collapse_c1vfyl.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'

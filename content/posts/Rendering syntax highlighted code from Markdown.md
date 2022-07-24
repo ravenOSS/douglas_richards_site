@@ -1,10 +1,11 @@
 ---
-title: Rendering syntax highlighted code from Markdown
+title: Rendering code from Markdown
 slug: ReactMarkdown & React Syntax Highlighter
 date: January 21, 2022
 createdAt: January 1, 2022 11:49 PM
 author: Douglas Richards
-excerpt: A combination of packages provides an easy way to render syntax highlighted code from Markdown.
+issue: How to render code from Markdown
+solution: A combination of packages provides an easy way to render syntax highlighted code from Markdown.
 thumbnail: 'v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'

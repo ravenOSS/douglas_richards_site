@@ -4,7 +4,8 @@ slug: squares
 date: February 4, 2022
 createdAt: February 2, 2022 21:53 PM
 author: Douglas Richards
-excerpt: Create custom loader for Next local images
+issue: Local images urls being prepended with the url in the next.config.js file.
+solution: Create custom loader for Next local images
 thumbnail: 'v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'

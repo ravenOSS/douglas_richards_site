@@ -4,7 +4,8 @@ slug: Learning utility CSS
 date: January 30, 2022
 createdAt: January 29, 2022 3:49 PM
 author: Douglas Richards
-excerpt: Overcoming eslint and prettier errors
+issue: Overcoming eslint and prettier errors
+solution: Override Eslint missing prop types
 thumbnail: 'v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 exampleImage: ''

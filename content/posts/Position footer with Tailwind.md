@@ -4,7 +4,8 @@ slug: Markdown-Unordered-List
 date: January 15, 2022
 createdAt: January 12, 2022 3:49 PM
 author: Douglas Richards
-excerpt: Getting a footer to stay at the page bottom is a common problem.
+issue: Getting a footer to stay at the page bottom is a common problem.
+solution: Footer positioning with Tailwind (or core CSS)
 thumbnail: '/v1619638137/squares_pwjy6f.jpg'
 heroImage: 'v1619638137/squares_pwjy6f.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'

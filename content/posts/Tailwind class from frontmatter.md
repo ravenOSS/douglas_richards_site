@@ -4,7 +4,8 @@ slug: Tailwind Background
 date: February 2, 2022
 createdAt: February 1,2022 3:40 PM
 author: Douglas Richards
-excerpt: Colorful?
+issue: Setting colors in markdown frontmatter with Tailwind
+solution: Define Tailwind class in markdown frontmatter
 thumbnail: 'v1619638113/collapse_c1vfyl.jpg'
 heroImage: 'v1619638113/collapse_c1vfyl.jpg'
 postColor: 'bg-orange-600 dark:bg-blue-600'
