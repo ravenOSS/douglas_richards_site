@@ -10,14 +10,24 @@ module.exports = {
 
 	theme: {
 		extend: {
+			typography: {
+				DEFAULT: {
+					css: {
+						pre: null,
+						maxWidth: '60ch',
+					},
+				},
+			},
 			fontFamily: {
 				sans: ['"IBM Plex Sans"', ...defaultTheme.fontFamily.sans],
 			},
 			container: {
 				center: true,
-				padding: '1rem',
 			},
 		},
 	},
-	plugins: [require('@tailwindcss/typography')],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('@tailwindcss/line-clamp'),
+	],
 }
