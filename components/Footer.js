@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import nextLogo from '../public/nextjsBlackLogo.svg'
-import { staticLoader } from '../lib/staticLoader'
+import { staticLoader } from '../utilities/staticLoader'
 
 export default function Footer() {
 	return (

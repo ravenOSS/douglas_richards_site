@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { MenuIcon } from '@heroicons/react/solid'
-import useOnClickOutside from './listen-for-outside-clicks'
+import useOnClickOutside from '../utilities/listen-for-outside-clicks'
 
 const navItems = [
-	{ url: '/', label: 'Home' },
-	{ url: '/bloglist', label: 'Blog' },
+	{ url: '/', label: 'Blog' },
 	{ url: '/profile', label: 'Profile' },
 	{ url: '/connect', label: 'Connect' },
 ]
@@ -21,8 +20,8 @@ export default function Navbar() {
 	})
 	return (
 		<nav className='  flex w-full justify-center bg-green-400 py-4'>
-			<div className=' relative  flex  w-4/5 max-w-7xl items-center justify-between bg-blue-300 px-1 dark:bg-blue-800'>
-				<div className=' font-bold text-gray-700 dark:text-gray-200 sm:text-lg md:text-2xl'>
+			<div className=' relative  flex w-full max-w-7xl items-center justify-between bg-blue-300 px-2 dark:bg-blue-800'>
+				<div className=' text-lg font-bold text-gray-700 dark:text-gray-200 sm:text-xl md:text-2xl'>
 					douglas richards
 				</div>
 
@@ -33,7 +32,7 @@ export default function Navbar() {
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									onClick={() => setIsBurgerOpen(false)}
-									className='h-4 w-4 sm:hidden'
+									className='h-8 w-8 sm:hidden'
 									fill='none'
 									viewBox='0 0 24 24'
 									stroke='currentColor'
@@ -64,7 +63,7 @@ export default function Navbar() {
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							onClick={() => setIsBurgerOpen(true)}
-							className='h-4 w-4 sm:hidden'
+							className='h-6 w-6 text-gray-700 dark:text-gray-200 sm:hidden'
 							fill='none'
 							viewBox='0 0 24 24'
 							stroke='currentColor'
