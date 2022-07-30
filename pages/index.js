@@ -37,7 +37,7 @@ export default function Home({ allPostsData }) {
 							them and I don't want to waste your time on that.
 						</p>
 						<p>
-							Mostly dealing with React.js and derivative frameworks such as
+							Mostly working with React.js and derivative frameworks such as
 							Next.js on the frontend and Node.js on the backend. However,
 							there'll be some non-framework related posts too.
 						</p>
@@ -59,13 +59,13 @@ export default function Home({ allPostsData }) {
 							Some posts are content for classes for which I am an instructor.
 						</div>
 						<p>
-							Since I have nowhere else to post, I'll be throwing in some random
-							stuff here.
+							Since I have nowhere else to post, I'll be throwing some random
+							stuff in here.
 						</p>
 					</article>
 				</section>
 				<section>
-					<div className='max-width-7xl  mx-auto grid grid-cols-1 items-center justify-center  gap-4 bg-gray-300 px-2  dark:bg-gray-700 md:grid-cols-2'>
+					<div className='max-width-7xl  mx-auto grid auto-rows-min grid-cols-1 items-center  justify-center gap-4 bg-gray-300 px-2 dark:bg-gray-700 md:grid-cols-2'>
 						{allPostsData.map(
 							({
 								id,
@@ -83,26 +83,25 @@ export default function Home({ allPostsData }) {
 							}) => (
 								<article
 									key={id}
-									className='my-2 rounded-lg border-2 border-orange-400 p-2 '
+									className='card my-2 grid h-full grid-cols-1 items-start justify-center gap-2 rounded-lg border-2  border-orange-400 p-1 text-gray-700 dark:text-gray-200 sm:grid-cols-2 sm:p-4 '
 								>
-									<div className='grid grid-cols-1 items-center justify-center gap-2 sm:grid-cols-2   '>
-										<div className=' grid text-gray-800 dark:text-gray-200 sm:col-span-1 sm:col-start-1'>
-											<h4 className='my-2 text-left text-xs '>{date}</h4>
-											<h2 className=' my-2 text-left text-lg font-bold '>
-												{title}
-											</h2>
-										</div>
-										<div className='space-y-2 text-gray-900 dark:text-gray-200 sm:col-span-1 sm:col-start-2'>
-											<p className='   line-clamp-2'>{issue}</p>
-											<p className='  line-clamp-2'>{solution}</p>
-
-											<Link className='' href={`/posts/${id}`} passHref>
-												<button className='w-25 m-1  h-10  bg-transparent px-2 py-1 text-sm font-semibold text-blue-700 no-underline  dark:text-blue-300'>
-													Read More
-												</button>
-											</Link>
-										</div>
+									{/* <div className=' flex flex-col divide-y-2 divide-solid text-gray-800  outline-1 dark:text-gray-200 sm:flex-row sm:divide-x sm:divide-none'> */}
+									<div className='col-span-1 col-start-1 my-2'>
+										<h4 className=' text-left text-xs '>{date}</h4>
+										<h2 className=' text-left text-lg font-bold '>{title}</h2>
 									</div>
+
+									<div className=' relative col-span-1 col-start-1 my-2 gap-3 sm:col-span-1 sm:col-start-2'>
+										<p className='    line-clamp-2'>{issue}</p>
+										<p className='   line-clamp-2'>{solution}</p>
+										<div className='flex grow'></div>
+										<Link className='' href={`/posts/${id}`} passHref>
+											<button className='w-25 m-1  h-10   bg-transparent px-2 py-1 text-sm font-semibold text-blue-700 no-underline  dark:text-blue-300'>
+												Read More
+											</button>
+										</Link>
+									</div>
+									{/* </div> */}
 								</article>
 							)
 						)}
