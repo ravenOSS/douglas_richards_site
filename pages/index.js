@@ -46,7 +46,7 @@ export default function Home({ allPostsData }) {
 						<p>
 							Collecting data from sensors and devices obviously requires some
 							type of storage unless truly transient. I'll mostly use MongoDB
-							but other document type DBs such as DynamoDB or key:value stores
+							but also other document type DBs such as DynamoDB or key:value stores
 							such as Redis. IoT data collection is typically time based so time
 							series DBs will be explored.
 						</p>
