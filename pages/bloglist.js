@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { getPosts } from '../lib/getPosts'
+import { getPosts } from '../utilities/getPosts'
 
 export async function getStaticProps() {
 	// Nextjs built-in function
