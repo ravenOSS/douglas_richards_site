@@ -51,7 +51,7 @@ export default function Navbar() {
 										<Link href={url} passHref>
 											<a
 												onClick={() => setIsBurgerOpen(false)}
-												className='  font-extralight text-gray-700 no-underline dark:text-gray-200  sm:text-base md:text-lg '
+												className='  font-normal text-gray-700 no-underline dark:text-gray-200  sm:text-base md:text-lg '
 											>
 												{label}
 											</a>
