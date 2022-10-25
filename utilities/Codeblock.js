@@ -4,7 +4,7 @@ import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 const Codeblock = {
 	code({ children }) {
 		return (
-			<SyntaxHighlighter
+            <SyntaxHighlighter
 				style={vscDarkPlus}
 				language='jsx'
 				showLineNumbers={false}
@@ -12,7 +12,7 @@ const Codeblock = {
 			>
 				{String(children).replace(/\n$/, '').replace(/\t/g, '  ')}
 			</SyntaxHighlighter>
-		)
+        );
 	},
 }
 export default Codeblock

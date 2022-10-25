@@ -45,8 +45,8 @@ export function getAllPostIds() {
 			params: {
 				id: fileName.replace(/\.md$/, ''),
 			},
-		}
-	})
+		};
+	});
 }
 
 export function getPostById(id) {
