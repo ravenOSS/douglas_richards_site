@@ -7,6 +7,7 @@ const navItems = [
 	{ url: '/', label: 'Blog' },
 	{ url: '/profile', label: 'Profile' },
 	{ url: '/connect', label: 'Connect' },
+	{ url: '/about', label: 'About' },
 ]
 
 //TODO: add X to close navbar
@@ -19,8 +20,8 @@ export default function Navbar() {
 		setIsBurgerOpen(false)
 	})
 	return (
-		<nav className='  flex w-full justify-center bg-green-400 py-4'>
-			<div className=' relative  flex w-full max-w-7xl items-center justify-between bg-blue-300 px-2 dark:bg-blue-800'>
+		<nav className='  dark:bg-grey-700 flex w-full justify-center py-4'>
+			<div className=' bg-grey-300  dark:bg-grey-800 relative flex w-full max-w-7xl items-center justify-between px-10'>
 				<div className=' text-lg font-bold text-gray-700 dark:text-gray-200 sm:text-xl md:text-2xl'>
 					douglas richards
 				</div>
