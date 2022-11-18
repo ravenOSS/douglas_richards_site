@@ -7,7 +7,7 @@ const navItems = [
 	{ url: '/', label: 'Blog' },
 	{ url: '/profile', label: 'Profile' },
 	{ url: '/connect', label: 'Connect' },
-	{ url: '/about', label: 'About' },
+	{ url: '/bio', label: 'Bio' },
 ]
 
 //TODO: add X to close navbar
@@ -20,7 +20,7 @@ export default function Navbar() {
 		setIsBurgerOpen(false)
 	})
 	return (
-        <nav className='  dark:bg-grey-700 flex w-full justify-center py-4'>
+		<nav className='  dark:bg-grey-700 flex w-full justify-center py-4'>
 			<div className=' bg-grey-300  dark:bg-grey-800 relative flex w-full max-w-7xl items-center justify-between px-10'>
 				<div className=' text-lg font-bold text-gray-700 dark:text-gray-200 sm:text-xl md:text-2xl'>
 					douglas richards
@@ -49,14 +49,13 @@ export default function Navbar() {
 								{navItems.map(({ url, label }) => (
 									<div key={label} className='w-fit  py-2 px-2'>
 										<Link
-                                            href={url}
-                                            passHref
-                                            onClick={() => setIsBurgerOpen(false)}
-                                            className='  font-normal text-gray-700 no-underline dark:text-gray-200  sm:text-base md:text-lg '>
-
-                                            {label}
-
-                                        </Link>
+											href={url}
+											passHref
+											onClick={() => setIsBurgerOpen(false)}
+											className='  font-normal text-gray-700 no-underline dark:text-gray-200  sm:text-base md:text-lg '
+										>
+											{label}
+										</Link>
 									</div>
 								))}
 							</div>
@@ -83,17 +82,16 @@ export default function Navbar() {
 					{navItems.map(({ url, label }) => (
 						<div key={label} className='w-16  px-1 md:w-24'>
 							<Link
-                                href={url}
-                                passHref
-                                className='font-extralight  text-gray-700 no-underline transition duration-300 hover:text-lg   dark:text-gray-200 sm:text-base md:text-lg '>
-
-                                {label}
-
-                            </Link>
+								href={url}
+								passHref
+								className='font-extralight  text-gray-700 no-underline transition duration-300 hover:text-lg   dark:text-gray-200 sm:text-base md:text-lg '
+							>
+								{label}
+							</Link>
 						</div>
 					))}
 				</div>
 			</div>
 		</nav>
-    );
+	)
 }
