@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 export default function useOnClickOutside(menuRef, handler) {
 	useEffect(() => {
-		const listener = (event) => {
+		const handleClickOutside = (event) => {
 			if (!menuRef.current || menuRef.current.contains(event.target)) {
 				return
 			}
@@ -10,12 +10,12 @@ export default function useOnClickOutside(menuRef, handler) {
 			handler(event)
 		}
 
-		document.addEventListener('mousedown', listener)
-		document.addEventListener('touchstart', listener)
+		document.addEventListener('mousedown', handleClickOutside)
+		document.addEventListener('touchstart', handleClickOutside)
 
 		return () => {
-			document.removeEventListener('mousedown', listener)
-			document.removeEventListener('touchstart', listener)
+			document.removeEventListener('mousedown', handleClickOutside)
+			document.removeEventListener('touchstart', handleClickOutside)
 		}
 	}, [menuRef, handler])
 }

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import { getPosts } from '../utilities/getPosts'
+import PageHeader from '../components/PageHeader'
 
 export async function getStaticProps() {
 	// Nextjs built-in function
@@ -22,13 +23,10 @@ export default function Home({ allPostsData }) {
 				<meta name='site description' content='Douglas Richards Blog' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<div className='flex   max-w-7xl flex-grow flex-col items-center justify-center  bg-gray-300  dark:bg-gray-700 '>
-				<h1 className='text-bold mx-auto my-4 text-center text-2xl font-normal  dark:text-orange-400 sm:text-5xl'>
-					Web technologies, IoT, and their confluence
-				</h1>
-
+			<div className='flex   max-w-7xl flex-grow flex-col items-center justify-center  bg-gray-300  dark:bg-gray-900 '>
+				<PageHeader />
 				<section>
-					<div className='max-width-7xl  mx-auto grid auto-rows-fr grid-cols-1  gap-5 bg-gray-300 px-2 dark:bg-gray-700 sm:grid-cols-2'>
+					<div className='max-width-7xl  mx-auto grid auto-rows-fr grid-cols-1  gap-5 bg-gray-300 px-2 dark:bg-gray-900 sm:grid-cols-2'>
 						{allPostsData.map(
 							({
 								id,
@@ -46,7 +44,7 @@ export default function Home({ allPostsData }) {
 							}) => (
 								<article
 									key={id}
-									className='card grid max-h-full  grid-flow-row grid-cols-1   gap-5 rounded-lg border-2 border-orange-400  bg-transparent p-1 text-gray-700 dark:text-gray-200 sm:grid-cols-2 sm:p-2 '
+									className='card grid max-h-full  grid-flow-row grid-cols-1   gap-5 rounded-lg border-2 border-orange-600  bg-transparent p-1 text-gray-700 dark:text-gray-200 sm:grid-cols-2 sm:p-2 '
 								>
 									<div className='col-span-1  col-start-1 mt-1  flex min-h-full flex-col place-items-start'>
 										<h4 className=' mb-5 text-xs '>{date}</h4>
