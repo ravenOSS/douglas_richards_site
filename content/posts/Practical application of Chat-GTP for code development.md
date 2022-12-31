@@ -17,7 +17,10 @@ category: 'Coding'
 
 Use AWS Amplify framework for auth and DynamoDB backend services plus getting data from a crypto API graphql endpoint.
 
+Clearly needed two clients to connect to the two services. Question was how to use two Apollo clients with ApolloProvider?
+
 ## Chat with Chat-GTP
+
 
 djr@raveniot.com how do i use apollo graphql client with aws appsync dynamodb and with external graphql endpoint
 
