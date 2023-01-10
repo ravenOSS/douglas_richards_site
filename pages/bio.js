@@ -1,12 +1,11 @@
+import PageHeader from '../components/PageHeader'
 export default function Profile() {
 	return (
 		<div>
 			{/* <div className='prose mx-auto grid grid-flow-row grid-cols-1 gap-4 bg-gray-200  p-4 dark:prose-invert dark:bg-gray-700 sm:grid-cols-2'> */}
 			<div>
-				<div className='flex   max-w-7xl flex-grow flex-col items-center justify-center  bg-gray-300  dark:bg-gray-700 '>
-					<h1 className='mx-auto my-4 text-center text-2xl font-normal   dark:text-orange-400 sm:text-5xl'>
-						Web technologies, IoT, and their confluence
-					</h1>
+				<div className='flex   max-w-7xl flex-grow flex-col items-center justify-center  bg-gray-300  dark:bg-gray-900 '>
+					<PageHeader />
 				</div>
 				<section className='columns-1 gap-6 p-5 sm:columns-2 '>
 					<article className='bg-grey-200 prose text-black dark:text-gray-200'>
