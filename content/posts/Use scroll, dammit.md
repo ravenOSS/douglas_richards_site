@@ -19,7 +19,9 @@ Link to long url causes an unwanted margin on the right side of the link.
 
 A long url does not automatically break the line so the window is widened to fit the link. This causes a right margin on the right side of the link.
 
-overflow: hidden;
+Tailwind classes
+
+class="overflow-hidden"
 
 Use overflow-x-auto
 

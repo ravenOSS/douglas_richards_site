@@ -22,7 +22,7 @@ The Nextjs project is configured as a static site and uses <gray-matter> to pars
 Trying to use interpolated Tailwind classes does not work. Tailwind uses regex algorithms to search for complete and recognizable Tailwind classes. An interpolated class such as
 
 ```
-className={`loggedIn ${this.state.loggedIn ? 'bg-blue-[600 : 600'}`}
+className={`loggedIn ${this.state.loggedIn ? 'bg-blue-[600 : 600]'}`}
 ```
 
 So, by referencing a valid class embedded in the frontmatter, the className property will be set to the value of the frontmatter.
