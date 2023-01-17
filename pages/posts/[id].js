@@ -26,8 +26,8 @@ export async function getStaticProps({ params }) {
 //! Note the backticks to allow JSX for postColor
 export default function Post({ postData }) {
 	return (
-		<div className=' flex w-full flex-wrap  items-center justify-center overflow-x-auto bg-gray-200  text-gray-700  dark:bg-gray-700'>
-			<article className=' prose w-full p-2 dark:prose-invert '>
+		<div className=' flex w-full flex-col flex-wrap  items-center justify-center overflow-auto bg-gray-200 text-gray-700 dark:bg-gray-700'>
+			<article className=' prose w-full p-2  dark:prose-invert '>
 				<h1>{postData.data.title}</h1>
 				<h4>{postData.data.date}</h4>
 				<ReactMarkdown components={Codeblock} remarkPlugins={[remarkGfm]}>

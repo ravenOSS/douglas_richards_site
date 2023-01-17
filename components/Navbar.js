@@ -10,9 +10,6 @@ const navItems = [
 	{ url: '/bio', label: 'Bio' },
 ]
 
-//TODO: add X to close navbar
-//TODO: increas padding on close icon to 48 x 48 px
-
 export default function Navbar() {
 	const [isBurgerOpen, setIsBurgerOpen] = useState(false)
 	const menuRef = useRef(null)
