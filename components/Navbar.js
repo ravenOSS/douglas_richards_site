@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import Link from 'next/link'
 import { MenuIcon } from '@heroicons/react/solid'
 import useOnClickOutside from '../utilities/listen-for-outside-clicks'
@@ -23,18 +23,18 @@ export default function Navbar() {
 					douglas richards
 				</div>
 
-				<div className=' absolute top-0.5 right-1 z-20 flex flex-col items-end justify-center'>
+				<div className=' absolute top-0.5 right-6 z-20 flex flex-col items-end justify-center'>
 					{isBurgerOpen ? (
 						<div ref={menuRef}>
-							<div className='flex flex-col items-end bg-gray-100 py-0   text-gray-200 dark:bg-gray-500 sm:hidden'>
+							<div className='flex flex-col items-end bg-gray-100 py-0 text-gray-200 dark:bg-gray-500 sm:hidden'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									onClick={() => setIsBurgerOpen(false)}
-									className='h-8 w-8 sm:hidden'
+									class=' h-8 w-8 stroke-gray-700 stroke-2 dark:stroke-gray-200 sm:hidden'
 									fill='none'
 									viewBox='0 0 24 24'
 									stroke='currentColor'
-									strokeWidth={2}
+									strokeWidth={5}
 								>
 									<path
 										strokeLinecap='round'
